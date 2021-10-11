@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>5. HTML Form & Table</title>
+</head>
+
+<body>
+    <h1 class="heading">Order Form</h1>
+    <form action="" class="login">
+        <label for="box__select">What would you like to buy</label><br>
+        <select class="price" id="box__select" name="price">
+            <option value="0">A (+ 0.5$)</option>
+            <option value="0">B (+ 0.5$)</option>
+            <option value="0">c (+ 0.5$)</option>
+        </select><br>
+        <p>How many would you like to order?</p><br>
+        <input type="radio" name="price__select" id="select__1">
+        <label for="select__1">1 - $10</label><br>
+        <input type="radio" name="price__select" id="select__2">
+        <label for="select__2">1 - $10</label><br>
+        <input type="radio" name="price__select" id="select__3">
+        <label for="select__3">1 - $10</label><br>
+        <p>Name <span style="color:red;">*</span></p>
+        <input type="text" placeholder="FirstName" size="15">
+        <input type="text" placeholder="LastName" size="15">
+        <p>Email</p>
+        <input type="email" size="35">
+        <p>Phone number</p>
+        <input type="text" name="phone1" size="5">
+        <input type="text" name="phone2" size="5">
+        <input type="text" name="phone3" size="5"><br>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
