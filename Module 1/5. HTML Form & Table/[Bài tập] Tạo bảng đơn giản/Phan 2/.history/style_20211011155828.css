@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.heading {
+    color: #0433ff;
+    font-size: 5rem;
+}

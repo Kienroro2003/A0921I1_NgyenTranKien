@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    margin: 5rem;
+}
+
+.leff {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+p {
+    display: inline;
+}
+
+.heading {
+    color: #0433ff;
+    font-size: 5rem;
+}

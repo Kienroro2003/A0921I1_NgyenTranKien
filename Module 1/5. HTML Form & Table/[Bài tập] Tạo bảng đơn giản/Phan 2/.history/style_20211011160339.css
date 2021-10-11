@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    margin: 5rem;
+}
+
+.leff {
+    text-align: left;
+    width: 50%;
+    float: left;
+}
+
+.flex {
+    display: flex;
+    font-size: 2rem;
+}
+
+.right {
+    text-align: right;
+    width: 50%;
+}
+
+.heading {
+    color: #0433ff;
+    font-size: 5rem;
+    text-align: center;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tạo form lấy survey khách hàng</title>
+</head>
+<body>
+<div id="container">
+    <form action="">
+        <h2>Market Research Survey</h2>
+        <div>Please take a few moments to complete this satisfaction survey.</div>
+        <hr>
+        <label for="age">What is your age range?</label><br>
+        <select id="age" >
+            <option value="0">18-24</option>
+            <option value="0">25-34</option>
+            <option value="0">35-49</option>
+            <option value="0">50+</option>
+        </select><br><br>
+        <label for="income">What is your yearly income range?</label><br>
+        <select name="" id="income">
+            <option value="0">$0 - $25,000</option>
+            <option value="0">$25,001 - $50,000</option>
+            <option value="0">$50,001 - $100,000</option>
+            <option value="0">$100,000+</option>
+        </select><br><br>
+        <label for="gender">Gender Identity</label><br>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label><br>
+        <input type="radio" name="gender" id="nonbinary">
+        <label for="nonbinary">Nonbinary</label><br>
+        <input type="radio" name="gender" id="other">
+        <label for="other">Other</label><br>
+        <input type="text"><br><br>
+        <label for="">Which of the following products have your purchased in the last 2 months. Please check all that apply.</label><br>
+        <input type="checkbox" name="select" id="select__1">
+        <label for="select__1">Product 1</label><br>
+        <input type="checkbox" name="select" id="select__2">
+        <label for="select__2">Product 2</label><br>
+        <input type="checkbox" name="select" id="select__3">
+        <label for="select__3">Product 3</label><br><br>
+        <legend>How often would you use our new product?</legend><br>
+        <input type="radio" name="radio-select" id="daily">
+        <label for="daily">Daily</label><br>
+        <input type="radio" name="radio-select" id="weekly">
+        <label for="weekly">Weekly</label><br>
+        <input type="radio" name="radio-select" id="monthly">
+        <label for="monthly">Monthly</label><br><br>
+        <label>What would you pay for the new product?</label><br>
+        <span>$</span>
+        <input type="number">
+        <span>.</span>
+        <input type="number"><br><br>
+        <label for="feedback">What would you pay for the new product?</label><br>
+        <textarea name="" id="feedback" cols="30" rows="10"></textarea><br><br>
+        <p>
+            Please rate your level of agreement with the following statements.</p>
+        <table border="1">
+            <tr>
+                <th></th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+            <tr>
+                <td>Our products are priced fairly.</td>
+                <th>
+                    <input type="radio" name="table-select-1"><br>
+                    1
+                </th>
+                <th>
+                    <input type="radio" name="table-select-1"><br>
+                    2
+                </th>
+                <th>
+                    <input type="radio" name="table-select-1"><br>
+                    3
+                </th>
+                <th>
+                    <input type="radio" name="table-select-1"><br>
+                    4
+                </th>
+            </tr>
+            <tr>
+                <td>Our products are high quality.</td>
+                <th>
+                    <input type="radio" name="table-select-2"><br>
+                    1
+                </th>
+                <th>
+                    <input type="radio" name="table-select-2"><br>
+                    2
+                </th>
+                <th>
+                    <input type="radio" name="table-select-2"><br>
+                    3
+                </th>
+                <th>
+                    <input type="radio" name="table-select-2"><br>
+                    4
+                </th>
+            </tr>
+            <tr>
+                <td>You would recommend our product to a friend or coworker.</td>
+                <th>
+                    <input type="radio" name="table-select-3"><br>
+                    1
+                </th>
+                <th>
+                    <input type="radio" name="table-select-3"><br>
+                    2
+                </th>
+                <th>
+                    <input type="radio" name="table-select-3"><br>
+                    3
+                </th>
+                <th>
+                    <input type="radio" name="table-select-3"><br>
+                    4
+                </th>
+            </tr>
+        </table>
+
+    </form>
+</div>
+</body>
+</html>
