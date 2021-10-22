@@ -1,0 +1,6 @@
+em co những câu hỏi sau
+document là gì
+ngoài getElementById thì còn có những gì 
+getElementById thì hay đi với document có đúng không
+function là gì 
+addEventListener là gì?Các giá trị của nó là gì?
