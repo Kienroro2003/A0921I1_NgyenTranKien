@@ -1,0 +1,47 @@
+*,*:after,*:before{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg-color:rgba(175, 254, 251, 0.5);
+    --bg-color-radius:rgba(175, 254, 251, 1);
+}
+
+html{
+    font-size:10px;
+}
+
+body{
+    width: 100vw;
+    height:100vh;
+    background-image:url("./4556678-magicnaanavi-dj-sona-league-of-legends-3d-futuristic-digital-art.jpg");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    /* background-position-y: 50%; */
+}
+
+#wrapper{
+    width:50vw;
+    height: 50vh;
+    /* margin:5rem auto; */
+    background-color: var(--bg-color);
+    /* margin:0 auto; */
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 20px 20px 50px 0 var(--bg-color-radius);
+    border-radius: 2rem;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    font-size: 2rem;
+    text-align: center;
+}
