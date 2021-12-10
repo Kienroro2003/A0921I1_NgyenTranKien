@@ -5,6 +5,8 @@ import java.time.LocalTime;
 public class StopWatch {
     private long startTime, endTime;
 
+    public StopWatch(){}
+
     public StopWatch(long startTime, long endTime) {
         this.startTime = startTime;
         this.endTime = endTime;
@@ -18,15 +20,15 @@ public class StopWatch {
         return endTime;
     }
 
-//    public void stop(){
-//        endTime = ;
-//    }
-//
-//    public void start(){
-//        startTime = ;
-//    }
+    public void stop(){
+        endTime =System.currentTimeMillis() ;
+    }
+
+    public void start(){
+        startTime = System.currentTimeMillis();
+    }
 
     public double getElapsedTime(){
-        return endTime - startTime;
+        return getEndTime() - getStartTime();
     }
 }

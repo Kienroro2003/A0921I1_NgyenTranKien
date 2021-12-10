@@ -17,10 +17,11 @@ public class Main {
     }
     public static void main(String[] args) {
         int[] arr = new int[10000];
-        long startTime = System.currentTimeMillis();
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start();
         hello(arr);
-        long endTime = System.currentTimeMillis();
-        StopWatch stopWatch = new StopWatch(startTime,endTime);
+        stopWatch.stop();
+
         System.out.println(stopWatch.getElapsedTime());
     }
 }
