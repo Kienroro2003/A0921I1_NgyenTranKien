@@ -1,7 +1,9 @@
 package ss4_Class_And_Object_in_Java.Bai_tap.Fan;
 
 public class Fan {
-    final byte SLOW = 1, MEDIUM = 2, FAST = 3;
+    final byte SLOW = 1;
+    final byte MEDIUM = 1;
+    final byte FAST = 1;
     private int speed = SLOW;
     private boolean isOn = false;
     private double radius = 5;
