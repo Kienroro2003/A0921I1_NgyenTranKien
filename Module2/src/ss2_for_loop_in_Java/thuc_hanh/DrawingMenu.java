@@ -2,7 +2,7 @@ package ss2_for_loop_in_Java.thuc_hanh;
 
 import java.util.Scanner;
 
-public class drawing_menu {
+public class DrawingMenu {
     public static void main(String[] args) {
         byte choice = -1;
         Scanner scanner = new Scanner(System.in);

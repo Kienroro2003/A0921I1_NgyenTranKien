@@ -2,7 +2,7 @@ package ss3_Array_loop.Bai_tap;
 
 import java.util.Scanner;
 
-public class add_element_in_array {
+public class AddElementInArray {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         int[] arr;

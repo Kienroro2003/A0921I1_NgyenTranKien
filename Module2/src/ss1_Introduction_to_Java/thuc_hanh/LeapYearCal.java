@@ -2,7 +2,7 @@ package ss1_Introduction_to_Java.thuc_hanh;
 
 import java.util.Scanner;
 
-public class leap_year_cal {
+public class LeapYearCal {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter year : ");

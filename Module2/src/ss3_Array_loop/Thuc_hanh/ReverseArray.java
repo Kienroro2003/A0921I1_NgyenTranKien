@@ -2,7 +2,7 @@ package ss3_Array_loop.Thuc_hanh;
 
 import java.util.Scanner;
 
-public class reverse_array {
+public class ReverseArray {
     public static void main(String[] args) {
         int size;
         int[] array;

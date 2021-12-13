@@ -2,7 +2,7 @@ package ss3_Array_loop.Bai_tap;
 
 import java.util.Scanner;
 
-public class delete_element_in_array {
+public class DeleteElementInArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] arr;

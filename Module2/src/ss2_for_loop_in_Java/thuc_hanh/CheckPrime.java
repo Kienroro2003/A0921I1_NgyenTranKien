@@ -2,7 +2,7 @@ package ss2_for_loop_in_Java.thuc_hanh;
 
 import java.util.Scanner;
 
-public class check_Prime {
+public class CheckPrime {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter number : ");

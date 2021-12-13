@@ -2,7 +2,7 @@ package ss3_Array_loop.Thuc_hanh;
 
 import java.util.Scanner;
 
-public class find_element_array {
+public class FindElementArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String[] input_name = {"Tran Phuoc Thinh", "Nguyen Tran Kien", "Tran Phuoc Thang", "Tran Phuoc Tien", "Tran Thi Dung", "Nguyen Van tien"};

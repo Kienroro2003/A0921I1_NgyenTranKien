@@ -2,7 +2,7 @@ package ss2_for_loop_in_Java.bai_tap;
 
 import java.util.Scanner;
 
-public class types {
+public class Types {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         byte choice = -1;

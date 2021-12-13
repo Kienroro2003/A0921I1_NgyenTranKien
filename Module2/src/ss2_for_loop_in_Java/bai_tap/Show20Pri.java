@@ -1,6 +1,6 @@
 package ss2_for_loop_in_Java.bai_tap;
 
-public class show_20_pri {
+public class Show20Pri {
     public static boolean checkPrimte(int a){
         if(a<2)return false;
         for(int i = 2;i<=Math.sqrt(a);i++){

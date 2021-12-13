@@ -2,7 +2,7 @@ package ss3_Array_loop.Bai_tap;
 
 import java.util.Scanner;
 
-public class sum_2 {
+public class Sum2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[][] arr;

@@ -1,6 +1,6 @@
 package ss2_for_loop_in_Java.bai_tap;
 
-public class Show_first_20_primes {
+public class ShowFirst20Primes {
     public static boolean checkPrime(int a) {
         if (a < 2) return false;
         for (int i = 2; i < Math.sqrt(a); i++) {
