@@ -2,7 +2,7 @@ package ss3_Array_loop.Thuc_hanh;
 
 import java.util.Scanner;
 
-public class find_minimum {
+public class FindMinimum {
     public static int minValue(int[] arr) {
         int index = 0;
         for(int i = 1;i<arr.length;i++){

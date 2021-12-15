@@ -2,7 +2,7 @@ package ss3_Array_loop.Bai_tap;
 
 import java.util.Scanner;
 
-public class find_min_array {
+public class FindMinArray {
     public static void main(String[] args){
         int[] array;
         Scanner scanner = new Scanner(System.in);

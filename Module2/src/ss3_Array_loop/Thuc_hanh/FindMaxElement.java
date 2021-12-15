@@ -2,7 +2,7 @@ package ss3_Array_loop.Thuc_hanh;
 
 import java.util.Scanner;
 
-public class find_max_element {
+public class FindMaxElement {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int size;
