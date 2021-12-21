@@ -4,8 +4,6 @@ public abstract class Shape implements Resizeable{
     private String color = "green";
     private boolean filled = true;
 
-    abstract final public void get();
-
     public Shape() {
     }
 
