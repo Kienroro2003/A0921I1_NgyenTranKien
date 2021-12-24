@@ -10,7 +10,8 @@ public class SquareTest {
         shapes[3] = new Rectangle(3,5);
         for(Shape i : shapes){
             if(i instanceof Colorable){
-                ((Colorable) i).howToColor();
+                Colorable y = (Colorable) i;
+                (y).howToColor();
             }
         }
 
