@@ -52,8 +52,8 @@ public class MyLinkedList<E> {
         }
 
         holder = temp.next;
-        temp.next = new Node(element);
-        temp.next.next = holder;
+        temp.data = new Node(element);
+        temp.next = holder;
         numNodes++;
     }
 
@@ -166,7 +166,7 @@ public class MyLinkedList<E> {
 
     public E getLast(){
         Node temp = head;
-        for(int i = 0 ; i < numNodes - 1 ; i++){
+        while(temp.next != null){
             temp = temp.next;
         }
         return (E) temp.data;

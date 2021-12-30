@@ -41,10 +41,14 @@ public class MyLinkedListTest {
         myLinkedList.addFirst(c);
         myLinkedList.addFirst(b);
         myLinkedList.addFirst(a);
-        Student student = myLinkedList.getLast();
+//        Student student = myLinkedList.getLast();
+//        System.out.println(student.getName());
+//        myLinkedList.add(d,0);
+        Student student = (Student) myLinkedList.get(0);
         System.out.println(student.getName());
 
 //        myLinkedList.clear();
-        System.out.println(myLinkedList.get(1));
+        System.out.println(myLinkedList.get(2));
+        System.out.println(myLinkedList.getLast());
     }
 }
