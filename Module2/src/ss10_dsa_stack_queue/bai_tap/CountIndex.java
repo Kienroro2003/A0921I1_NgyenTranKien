@@ -9,7 +9,6 @@ public class CountIndex {
         String name;
         name = scanner.nextLine();
         String[] subName = name.split("");
-        int count = 0;
         TreeMap<String,Integer> treeMap = new TreeMap<>();
         for ( int i = 0 ; i < name.length() ; i++){
             if(treeMap.containsKey(subName[i])){
