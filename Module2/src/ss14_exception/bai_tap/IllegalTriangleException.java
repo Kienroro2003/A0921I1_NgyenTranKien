@@ -1,16 +1,17 @@
 package ss14_exception.bai_tap;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class IllegalTriangleException {
-    public static void isTriangle(int a , int b, int c){
-        try{
-            if(a + b < c || a + c < b || b + c < a){
+    public static void isTriangle(int a, int b, int c) {
+        try {
+            if (a + b < c || a + c < b || b + c < a) {
                 throw new IllegalArgumentException("It not a triangle");
             }else{
                 System.out.println("It a triangle");
             }
-        }catch(IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
     }
