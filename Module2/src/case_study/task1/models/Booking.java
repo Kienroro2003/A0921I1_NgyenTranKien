@@ -2,22 +2,24 @@ package case_study.task1.models;
 
 public class Booking {
     private int bookingCode;
-    private int dayStart;
-    private int dayEnd;
-    private int customerCode;
-    private String service;
-    private String serviceType;
+    private String dayStart;
+    private String dayEnd;
+    private Customer customerCode;
+    private Facility service;
 
     public Booking() {
     }
 
-    public Booking(int bookingCode, int dayStart, int dayEnd, int customerCode, String service, String serviceType) {
+    public Booking(int bookingCode,
+                   String dayStart,
+                   String dayEnd,
+                   Customer customerCode,
+                   Facility service) {
         this.bookingCode = bookingCode;
         this.dayStart = dayStart;
         this.dayEnd = dayEnd;
         this.customerCode = customerCode;
         this.service = service;
-        this.serviceType = serviceType;
     }
 
     public int getBookingCode() {
@@ -28,43 +30,46 @@ public class Booking {
         this.bookingCode = bookingCode;
     }
 
-    public int getDayStart() {
+    public String getDayStart() {
         return dayStart;
     }
 
-    public void setDayStart(int dayStart) {
+    public void setDayStart(String dayStart) {
         this.dayStart = dayStart;
     }
 
-    public int getDayEnd() {
+    public String getDayEnd() {
         return dayEnd;
     }
 
-    public void setDayEnd(int dayEnd) {
+    public void setDayEnd(String dayEnd) {
         this.dayEnd = dayEnd;
     }
 
-    public int getCustomerCode() {
+    public Customer getCustomerCode() {
         return customerCode;
     }
 
-    public void setCustomerCode(int customerCode) {
+    public void setCustomerCode(Customer customerCode) {
         this.customerCode = customerCode;
     }
 
-    public String getService() {
+    public Facility getService() {
         return service;
     }
 
-    public void setService(String service) {
+    public void setService(Facility service) {
         this.service = service;
     }
 
-    public String getServiceType() {
-        return serviceType;
-    }
-
-    public void setServiceType(String serviceType) {
-        this.serviceType = serviceType;
+    @Override
+    public String toString() {
+        return "Booking{" +
+                "bookingCode=" + bookingCode +
+                ", dayStart='" + dayStart + '\'' +
+                ", dayEnd='" + dayEnd + '\'' +
+                ", customerCode=" + customerCode +
+                ", service=" + service +
+                '}';
     }
 }

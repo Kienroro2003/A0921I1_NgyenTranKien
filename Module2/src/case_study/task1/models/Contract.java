@@ -2,15 +2,19 @@ package case_study.task1.models;
 
 public class Contract {
     private int numberContract;
-    private int bookingCode;
+    private Booking bookingCode;
     private int advanceDepositAmount;
     private int totaPayment;
-    private int customerCode;
+    private Customer customerCode;
 
     public Contract() {
     }
 
-    public Contract(int numberContract, int bookingCode, int advanceDepositAmount, int totaPayment, int customerCode) {
+    public Contract(int numberContract,
+                    Booking bookingCode,
+                    int advanceDepositAmount,
+                    int totaPayment,
+                    Customer customerCode) {
         this.numberContract = numberContract;
         this.bookingCode = bookingCode;
         this.advanceDepositAmount = advanceDepositAmount;
@@ -26,11 +30,11 @@ public class Contract {
         this.numberContract = numberContract;
     }
 
-    public int getBookingCode() {
+    public Booking getBookingCode() {
         return bookingCode;
     }
 
-    public void setBookingCode(int bookingCode) {
+    public void setBookingCode(Booking bookingCode) {
         this.bookingCode = bookingCode;
     }
 
@@ -50,11 +54,22 @@ public class Contract {
         this.totaPayment = totaPayment;
     }
 
-    public int getCustomerCode() {
+    public Customer getCustomerCode() {
         return customerCode;
     }
 
-    public void setCustomerCode(int customerCode) {
+    public void setCustomerCode(Customer customerCode) {
         this.customerCode = customerCode;
+    }
+
+    @Override
+    public String toString() {
+        return "Contract{" +
+                "numberContract=" + numberContract +
+                ", bookingCode=" + bookingCode +
+                ", advanceDepositAmount=" + advanceDepositAmount +
+                ", totaPayment=" + totaPayment +
+                ", customerCode=" + customerCode +
+                '}';
     }
 }

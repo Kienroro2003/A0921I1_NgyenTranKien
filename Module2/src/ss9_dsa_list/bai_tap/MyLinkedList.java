@@ -78,7 +78,7 @@ public class MyLinkedList<E> {
 
         Object data;
 
-        //nếu index = 0 thì trả về data hiện tại
+        //nếu index = 0 thì trả về case_study_new.data hiện tại
         if (index == 0) {
             data = temp.data;
             head = head.next;
@@ -102,7 +102,7 @@ public class MyLinkedList<E> {
             //khai bao 1 Node temp tro den head
             Node temp = head;
             while (temp.next != null) {
-                //nếu tồn tại một phần tử có data bằng data truyền vào thì node đó sẽ bị r
+                //nếu tồn tại một phần tử có case_study_new.data bằng case_study_new.data truyền vào thì node đó sẽ bị r
                 if (temp.next.data.equals(element)) {
                     temp = temp.next.next;
                     numNodes--;
