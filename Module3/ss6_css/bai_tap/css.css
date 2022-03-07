@@ -1,0 +1,48 @@
+*::after,
+*::before,
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  margin: 20px;
+}
+
+h1 {
+  border-bottom: 1px solid #a2a9b2;
+}
+div.wrapper {
+  box-sizing: border-box;
+  margin: 20px 0px;
+}
+
+.sub {
+  font-size: 16px;
+}
+
+div {
+  font-size: 20px;
+  display: inline-block;
+}
+
+p {
+  text-indent: 50px;
+  padding: 25px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-blue-blue {
+  color: #0070c0;
+}
+
+.color-blue {
+  color: #0b0080;
+}

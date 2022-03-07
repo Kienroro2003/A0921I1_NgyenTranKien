@@ -3,7 +3,7 @@ use CaseStudy;
 
 create table vi_tri(
 ma_vi_tri int primary key not null auto_increment,
-trinh_do varchar(20)
+ten_vi_tri varchar(20)
 );
 
 create table trinh_do(
@@ -19,7 +19,7 @@ ten_bo_phan varchar(20)
 create table nhan_vien(
 ma_nhan_vien int primary key not null auto_increment,
 ho_ten varchar(20),
-ngay_sinh datetime,
+ngay_sinh date,
 so_cmnd int,
 luong int,
 so_dien_thoai int,
@@ -62,6 +62,12 @@ ten_loai_dich_vu varchar(20)
 );
 
 create table dich_vu(
+ma_dich_vu int primary key not null auto_increment,
+ten_dich_vu varchar(50),
+dien_tich int,
+chi_phi_thue double,
+so_nguoi_toi_da int,
+tieu_chuan_phong varchar(50),
 mo_ta_tien_nghi_khac varchar(50),
 dien_tich_ho_boi int,
 so_tang int,
@@ -73,28 +79,28 @@ foreign key(ma_loai_dich_vu) references loai_dich_vu(ma_loai_dich_vu)
 
 create table dich_vu_di_kem(
 ma_dich_vu_di_kem int primary key auto_increment not null,
-ten_dich_vu_di_kem varchar(20),
-gia int,
-don_vi varchar(20),
-trang_thai varchar(20)
+ten_dich_vu_di_kem varchar(50),
+gia int default 1,
+don_vi varchar(50),
+trang_thai varchar(50)
 );
 
 create table hop_dong(
 ma_hop_dong int primary key auto_increment not null,
-ngay_lam_hop_dong datetime,
-ngay_ket_thuc datetime,
+ngay_lam_hop_dong date,
+ngay_ket_thuc date,
 tien_dat_coc int,
 ma_nhan_vien int,
 ma_khach_hang int,
 ma_dich_vu int,
 foreign key (ma_nhan_vien) references nhan_vien(ma_nhan_vien),
 foreign key (ma_khach_hang) references khach_hang(ma_khach_hang),
-foreign key (ma_dich_vu) references dich_vu(ma_loai_dich_vu)
+foreign key (ma_dich_vu) references dich_vu(ma_dich_vu)
 );
 
 create table hop_dong_chi_tiet(
-ma_hop_dong_chi_tiet int primary key auto_increment not null,
-so_luong int,
+ma_hop_dong_chi_tiet int primary key not null auto_increment,
+so_luong int default 0,
 ma_hop_dong int,
 ma_dich_vu_di_kem int,
 foreign key(ma_hop_dong) references hop_dong(ma_hop_dong),
