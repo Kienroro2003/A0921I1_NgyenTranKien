@@ -1,0 +1,138 @@
+*,
+*::after,
+*a::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-size: 10px;
+}
+
+/*=========================Header=========================*/
+
+header h1 {
+  background-color: #23282d;
+  text-align: center;
+  margin: 0px;
+  padding: 1rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+span {
+  color: #fd2b2d;
+}
+
+nav {
+  flex: 100%;
+  background-color: #23282d;
+  text-align: center;
+  padding: 0.5rem 0px;
+}
+
+nav ul {
+  margin: 0px;
+  display: flex;
+  list-style: none;
+  flex: 100%;
+  justify-content: center;
+}
+
+nav ul li {
+  color: #eeeeee;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+nav ul li:hover {
+  color: #4db2ec;
+}
+
+/*=========================End header=========================*/
+/*=========================Section=========================*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+section {
+  max-width: 1170px;
+  margin: 0px auto;
+  padding: 0 1.5rem;
+}
+
+section > h2 {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: #4db2ec;
+  line-height: 1;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+section article {
+  margin-bottom: 1rem;
+}
+
+section article h2 {
+  display: inline-block;
+}
+
+.detail {
+  padding-left: 1rem;
+}
+/*=========================End section=========================*/
+
+/*=========================Footer=========================*/
+footer p {
+  padding: 1rem;
+  background-color: #23282d;
+  color: #eeeeee;
+  text-align: center;
+}
+/*=========================End footer=========================*/

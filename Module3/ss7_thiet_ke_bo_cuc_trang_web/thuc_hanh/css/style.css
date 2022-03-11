@@ -1,0 +1,8 @@
+.boxmodel {
+  margin: 0px;
+  width: 800 px;
+  border: 10 px;
+  padding: 10 px;
+  border-color: chartreuse aqua blue blueviolet;
+  border-style: solid;
+}
