@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d076a76-9350-48ee-b701-bdc03dbcd46b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Module3/ss6_css/thuc_hanh/nhung_css.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module3/ss6_css/thuc_hanh/su_dung_css.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module3/case_study/CaseStudy.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Module3/case_study/CaseStudy.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module3/case_study/Managent.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Module3/case_study/Managent.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/ss6_css/bai_tap/css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/ss6_css/bai_tap/dinh_dang_van_ban.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module3/ss6_css/bai_tap/dinh_dang_van_ban.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/ss6_css/bai_tap/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +56,7 @@
       <updated>1638530888065</updated>
       <workItem from="1638530890862" duration="20000" />
       <workItem from="1646638966104" duration="1638000" />
+      <workItem from="1646830910180" duration="1150000" />
     </task>
     <servers />
   </component>
@@ -73,5 +73,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
