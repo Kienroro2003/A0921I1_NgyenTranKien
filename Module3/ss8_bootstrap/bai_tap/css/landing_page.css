@@ -1,0 +1,13 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+  width: 108px;
+}
+
+nav {
+  font-size: 10px;
+}
