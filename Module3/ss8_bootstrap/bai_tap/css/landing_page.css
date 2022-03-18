@@ -7,7 +7,8 @@
 }
 
 body {
-  font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 }
 
 img {
@@ -28,7 +29,7 @@ nav {
 
 .banner {
   background-color: #0067b8;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   padding: 5px 0px;
 }
@@ -40,30 +41,62 @@ nav {
   line-height: 50%;
 }
 
-.information .heading{
-    font-weight:300;
-    font-size:42px;
+.information .heading {
+  font-weight: 300;
+  font-size: 42px;
 }
 
-.information .subheading{
-    width:798px;
-    margin:0 auto;
-    font-size: 20px;
-    font-weight:300;
-    line-height: 100%;
+.information .subheading {
+  width: 798px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 100%;
 }
 .link {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.link a{
-    
-    color:#0067b8;
-    font-weight:bold;
-    padding:10px;
+.link a {
+  color: #0067b8;
+  font-weight: bold;
+  padding: 10px;
 }
 
-video{
-    width: 100%;
+video {
+  width: 1310px;
+  margin: 0 0 25px;
+}
+
+.m-content {
+  margin-top: 25px;
+}
+
+.m-content h2 {
+  font-weight: 300;
+  font-size: 35px;
+}
+
+.m-content p {
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.m-content a {
+  font-weight: bold;
+  color: #0067b8;
+  font-size: 16px;
+}
+
+.m-content p{
+  line-height: 100%;
+}
+
+.m-content li{
+  margin-bottom: 20px;
+}
+
+.m-content li:hover a {
+  text-decoration: underline;
 }
