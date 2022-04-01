@@ -5,38 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78c01508-79c9-4da0-8c8e-3311e8af17be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ProductServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/bean/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/impl/ProductRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/error-404.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product/delete.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product/listSearch.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product/search.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/product/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/customer-management/src/main/java/controller/CustomerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/customer-management/src/main/java/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/customer-management/src/main/java/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/customer-management/src/main/java/service/Impl/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/customer-management/src/main/webapp/customer/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/customer-management/src/main/webapp/customer/delete.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/customer-management/src/main/webapp/customer/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/customer-management/src/main/webapp/customer/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/customer-management/src/main/webapp/customer/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/customer-management/src/main/webapp/error-404.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/Calculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/CalculatorServlet.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_AccountName_WBE/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_AccountName_WBE/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_AccountName_WBE/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_AccountName_WBE/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_AccountName_WBE/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module2_AccountName_WBE/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/controller/ProductServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/model/bean/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/model/repository/ProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/model/repository/impl/ProductRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/model/service/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/WEB-INF/classes/model/service/impl/ProductServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/error-404.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/product/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/product/delete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/product/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/product/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/product/listSearch.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/product/search.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../apache-tomcat-9.0.60/webapps/ROOT/product/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +197,7 @@
       <option name="presentableId" value="Default" />
       <updated>1648145576522</updated>
       <workItem from="1648145577596" duration="966000" />
-      <workItem from="1648180357920" duration="10582000" />
+      <workItem from="1648180357920" duration="12207000" />
     </task>
     <servers />
   </component>
