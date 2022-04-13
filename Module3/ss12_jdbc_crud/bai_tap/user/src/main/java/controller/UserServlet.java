@@ -48,10 +48,22 @@ public class UserServlet extends HttpServlet {
                     e.printStackTrace();
                 }
                 break;
+            case "permision":
+                addUserPermision(request,response);
+                break;
             default:
                 showListUser(request, response);
         }
 
+    }
+
+    private void addUserPermision(HttpServletRequest request, HttpServletResponse response) {
+
+        User user = new User("quan", "quan.nguyen@codegym.vn", "vn");
+
+        int[] permision = {1, 2, 4};
+
+        userServlet.addUserTransaction(user, permision);
     }
 
     private void showEditForm(HttpServletRequest request, HttpServletResponse response) {

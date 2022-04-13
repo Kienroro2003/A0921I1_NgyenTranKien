@@ -13,5 +13,6 @@ public interface IUserDAO {
     boolean updateUser(User user) throws SQLException;
     void insertUser(User user);
     User selectUser(int id);
+    void addUserTransaction(User user,int[] permisions);
 
 }

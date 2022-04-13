@@ -35,9 +35,18 @@ public class UserServlet extends HttpServlet {
             case "delete":
                 deleteUser(request, response);
                 break;
+            case"permision":
+                addUserPermision(request,response);
+                break;
             default:
                 listUser(request, response);
         }
+    }
+
+    private void addUserPermision(HttpServletRequest request, HttpServletResponse response) {
+        User user = new User("quan", "quan.nguyen@codegym.vn", "vn");
+        int[] permision = {1,2,4};
+        userDAO.addUserTransaction(user,permision);
     }
 
     private void deleteUser(HttpServletRequest request, HttpServletResponse response) {
@@ -62,7 +71,7 @@ public class UserServlet extends HttpServlet {
 
     private void showEditForm(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
-        User existingUser = userDAO.selectUser(id);
+        User existingUser = userDAO.getUserById(id);
         request.setAttribute("user", existingUser);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("user/edit.jsp");
         try {
@@ -144,7 +153,7 @@ public class UserServlet extends HttpServlet {
         String country = request.getParameter("country");
         User user = new User(name, email, country);
         try {
-            userDAO.insertUser(user);
+            userDAO.insertUserStore(user);
             RequestDispatcher requestDispatcher = request.getRequestDispatcher("user/create.jsp");
             try {
                 requestDispatcher.forward(request, response);
