@@ -159,6 +159,7 @@ public class CustomerServlet extends HttpServlet {
         {
             RequestDispatcher requestDispatcher = request.getRequestDispatcher("customer/create.jsp");
             String name = request.getParameter("name");
+            String code = request.getParameter("code");
             String birthday = request.getParameter("birthday");
             boolean gender = Boolean.parseBoolean(request.getParameter("gender"));
             String idCard = request.getParameter("idCard");
@@ -167,7 +168,7 @@ public class CustomerServlet extends HttpServlet {
             String email = request.getParameter("email");
             String address = request.getParameter("address");
             int customerTypeId = Integer.parseInt(request.getParameter("customerTypeId"));
-            Customer customer = new Customer(name, birthday,gender, idCard, phone, email, address, customerTypeId);
+            Customer customer = new Customer(name, birthday,gender, idCard, phone, email, address, customerTypeId,code);
             String mess = "Them moi thanh cong";
             List<String> stringList = customerService.insertCustomer(customer);
             for(String string : stringList){

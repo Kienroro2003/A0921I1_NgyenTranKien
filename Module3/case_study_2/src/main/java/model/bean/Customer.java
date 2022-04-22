@@ -10,6 +10,36 @@ public class Customer {
     private String customerEmail;
     private String customerAddress;
     private int customerTypeId;
+    private String customerCode;
+
+    public String getCustomerCode() {
+        return customerCode;
+    }
+
+    public Customer(String customerName, String customerBirthday, boolean customerGender, String customerIdCard, String customerPhone, String customerEmail, String customerAddress, int customerTypeId, String customerCode) {
+        this.customerName = customerName;
+        this.customerBirthday = customerBirthday;
+        this.customerGender = customerGender;
+        this.customerIdCard = customerIdCard;
+        this.customerPhone = customerPhone;
+        this.customerEmail = customerEmail;
+        this.customerAddress = customerAddress;
+        this.customerTypeId = customerTypeId;
+        this.customerCode = customerCode;
+    }
+
+    public Customer(int customerId, String customerName, String customerBirthday, boolean customerGender, String customerIdCard, String customerPhone, String customerEmail, String customerAddress, int customerTypeId, String customerCode) {
+        this.customerId = customerId;
+        this.customerName = customerName;
+        this.customerBirthday = customerBirthday;
+        this.customerGender = customerGender;
+        this.customerIdCard = customerIdCard;
+        this.customerPhone = customerPhone;
+        this.customerEmail = customerEmail;
+        this.customerAddress = customerAddress;
+        this.customerTypeId = customerTypeId;
+        this.customerCode = customerCode;
+    }
 
     public Customer() {
     }

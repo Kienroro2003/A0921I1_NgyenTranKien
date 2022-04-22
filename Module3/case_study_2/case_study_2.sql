@@ -87,6 +87,8 @@ foreign key (customer_id) references customer(customer_id),
 foreign key (service_id) references service(service_id)
 );
 
+truncate table contract;
+
 insert into contract
 values(1,"2020-12-08 00:00:00","2020-12-08 00:00:00",0,3,1,3),
 (2,"2020-07-14 00:00:00","2020-07-21 00:00:00",200000,7,3,1),

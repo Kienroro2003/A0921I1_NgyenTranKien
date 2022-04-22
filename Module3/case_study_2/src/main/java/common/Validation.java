@@ -1,6 +1,16 @@
 package common;
 
 public class Validation {
+    public static boolean checkCustomerCode(String code){
+        String regex = "^KH-[0-9]{4}$";
+        return code.matches(regex);
+    }
+
+    public static boolean checkServiceCode(String code){
+        String regex = "^DV-[0-9]{4}$";
+        return code.matches(regex);
+    }
+
     public static boolean checkName(String name) {
         String regex = "^[a-zA-Z ]{3,45}$";
         return name.matches(regex);

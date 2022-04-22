@@ -42,6 +42,13 @@ public class CustomerServiceImpl implements CustomerService {
             stringList.add("Tên sai định dạng");
         }
 
+        if(Validation.checkCustomerCode(customer.getCustomerCode())){
+            stringList.add("");
+        }else{
+            check = false;
+            stringList.add("Mã sai định dạng KH-XXXX");
+        }
+
         if(Validation.checkIdCard(customer.getCustomerIdCard())){
             stringList.add("");
         }else{

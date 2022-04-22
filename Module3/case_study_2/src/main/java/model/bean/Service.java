@@ -10,6 +10,36 @@ public class Service {
     private String descriptionOtherConveniece;
     private double poolArea;
     private int numberOfFloors;
+    private String serviceCode;
+
+    public String getServiceCode() {
+        return serviceCode;
+    }
+
+    public Service(String serviceName, int serviceArea, double serviceCost, int serviceMaxPeople, String standardRoom, String descriptionOtherConveniece, double poolArea, int numberOfFloors, String serviceCode) {
+        this.serviceName = serviceName;
+        this.serviceArea = serviceArea;
+        this.serviceCost = serviceCost;
+        this.serviceMaxPeople = serviceMaxPeople;
+        this.standardRoom = standardRoom;
+        this.descriptionOtherConveniece = descriptionOtherConveniece;
+        this.poolArea = poolArea;
+        this.numberOfFloors = numberOfFloors;
+        this.serviceCode = serviceCode;
+    }
+
+    public Service(int serviceId, String serviceName, int serviceArea, double serviceCost, int serviceMaxPeople, String standardRoom, String descriptionOtherConveniece, double poolArea, int numberOfFloors, String serviceCode) {
+        this.serviceId = serviceId;
+        this.serviceName = serviceName;
+        this.serviceArea = serviceArea;
+        this.serviceCost = serviceCost;
+        this.serviceMaxPeople = serviceMaxPeople;
+        this.standardRoom = standardRoom;
+        this.descriptionOtherConveniece = descriptionOtherConveniece;
+        this.poolArea = poolArea;
+        this.numberOfFloors = numberOfFloors;
+        this.serviceCode = serviceCode;
+    }
 
     public Service() {
     }

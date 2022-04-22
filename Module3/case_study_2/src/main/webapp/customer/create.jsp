@@ -96,6 +96,11 @@
                     <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" value="${customer.getCustomerName()}">
                     <span style="color: red;">${stringList[0]}</span>
                 </div>
+                <div class="mb-3">
+                    <label for="code" class="form-label">Code</label>
+                    <input type="text" class="form-control" name="code" id="code" placeholder="Enter name" value="${customer.getCustomerCode()}">
+                    <span style="color: red;">${stringList[1]}</span>
+                </div>
                 <div class="mb-3 w-50">
                     <label for="birthday" class="form-label">Birthday: </label>
                     <input type="date" id="birthday" class="form-control" name="birthday" value="${customer.getCustomerBirthday()}">
@@ -114,7 +119,7 @@
                 <div class="mb-3">
                     <label for="idCard" class="form-label">Id card</label>
                     <input type="text" class="form-control" name="idCard" id="idCard" placeholder="Enter id card" value="${customer.getCustomerIdCard()}">
-                    <span style="color: red;">${stringList[1]}</span>
+                    <span style="color: red;">${stringList[2]}</span>
                 </div>
 <%--                <div class="mb-3">--%>
 <%--                    <label for="salary" class="form-label">Salary</label>--%>
@@ -124,12 +129,12 @@
                 <div class="mb-3">
                     <label for="phone" class="form-label">Phone</label>
                     <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter phone" value="${customer.getCustomerPhone()}">
-                    <span style="color: red;">${stringList[2]}</span>
+                    <span style="color: red;">${stringList[3]}</span>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" value="${customer.getCustomerEmail()}">
-                    <span style="color: red;">${stringList[3]}</span>
+                    <span style="color: red;">${stringList[4]}</span>
                 </div>
                 <div class="mb-3">
                     <label for="address" class="form-label">Address</label>

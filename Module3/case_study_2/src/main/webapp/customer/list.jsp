@@ -102,6 +102,7 @@
                     <thead>
                     <tr style="background-color: #FF2C2B;">
                         <th>Id</th>
+                        <th>Code</th>
                         <th>Name</th>
                         <th>Birthday</th>
                         <th>Id Card</th>
@@ -117,6 +118,7 @@
                     <c:forEach items="${customerList}" var="c">
                         <tr>
                             <td>${c.getCustomerId()}</td>
+                            <td>${c.getCustomerCode()}</td>
                             <td>${c.getCustomerName()}</td>
                             <td>${c.getCustomerBirthday()}</td>
                             <td>${c.getCustomerIdCard()}</td>
