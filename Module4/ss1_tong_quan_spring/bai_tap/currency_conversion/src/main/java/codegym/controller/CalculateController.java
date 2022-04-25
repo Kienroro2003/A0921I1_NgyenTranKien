@@ -16,7 +16,7 @@ public class CalculateController {
     }
 
     @GetMapping("/convert")
-    public String change(@RequestParam float usd, @RequestParam float rate, Model model) {
+    public String change(@RequestParam(value = "usd",defaultValue = "0") float usd, @RequestParam float rate, Model model) {
         float vnd = usd * rate;
         model.addAttribute("vnd",vnd);
         return "views/input";

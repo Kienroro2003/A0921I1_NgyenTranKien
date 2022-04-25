@@ -24,7 +24,7 @@ public class DictionaryController {
     }
 
     @GetMapping("/getDictionary")
-    public String getDictionary(@RequestParam String eng, Model model){
+    public String getDictionary(@RequestParam(value = "eng",defaultValue = "") String eng, Model model){
             String fixEng = eng.toLowerCase();
             String result = "";
             if(map.containsKey(fixEng)){
