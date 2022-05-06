@@ -21,6 +21,12 @@ public class ProductForm {
         this.image = image;
     }
 
+    public ProductForm(String name, String description, MultipartFile image) {
+        this.name = name;
+        this.description = description;
+        this.image = image;
+    }
+
     public int getId() {
         return id;
     }

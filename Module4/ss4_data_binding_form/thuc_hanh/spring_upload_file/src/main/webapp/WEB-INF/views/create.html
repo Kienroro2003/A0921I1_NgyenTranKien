@@ -10,7 +10,7 @@
 </p>
 <div id="form">
     <form th:action="@{/product/save}" th:object="${productForm}"
-          method="POST" novalidate="novalidate" enctype="multipart/form-data">
+          method="post" novalidate="novalidate" enctype="multipart/form-data">
         <input type="hidden" th:field="*{id}"/>
         <div>
             <label>Name</label>

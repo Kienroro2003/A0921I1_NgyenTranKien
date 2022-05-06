@@ -14,7 +14,7 @@ public class ProductRepository implements IProductRepository {
     static {
         products = new HashMap<>();
         products.put(1, new Product(1, "sach", 6000, "o ly", "Dong Tien"));
-        products.put(2, new Product(2, "sach", 12000, "trang", "Thang Long"));
+        products.put(2, new Product(2, "thuoc la", 12000, "trang", "Thang Long"));
         products.put(3, new Product(3, "sach", 7000, "xanh", "Cat"));
         products.put(4, new Product(4, "sach", 8000, "vang", "prince"));
     }

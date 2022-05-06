@@ -5,8 +5,9 @@ import com.codegym.model.Product;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductService implements IProductService{
+public class ProductService implements IProductService {
     private List<Product> products = new ArrayList<>();
+
     @Override
     public List<Product> findAll() {
         return products;
@@ -41,4 +42,5 @@ public class ProductService implements IProductService{
             }
         }
     }
+
 }
