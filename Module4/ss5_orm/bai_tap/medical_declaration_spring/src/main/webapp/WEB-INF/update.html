@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Update</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <p
+            class="h1 text-center"
+            style="text-transform: uppercase; font-weight: bold"
+    >
+        Tờ khai y tế
+    </p>
+    <p class="h3 text-center" style="text-transform: uppercase; font-weight: bold">
+        Đây là tài liệu quan trọng
+    </p>
+    <p class="h5 text-center" style="color: red; text-transform: uppercase;font-weight: bold">
+        Khuyến cáo: abs
+    </p>
+    <a th:href="@{/declaration/list}">Back to list</a>
+    <form th:action="@{/declaration/update}" th:method="post" th:object="${declaration}">
+        <input th:field="*{fullName}" hidden/>
+        <div class="form-group">
+            <label >Họ tên</label>
+            <input type="text" class="form-control" th:field="*{fullName}" disabled/>
+        </div>
+        <div class="form-group">
+            <label for="birthday">Năm sinh</label>
+            <input th:field="*{date}" type="date" class="form-control" id="birthday"/>
+        </div>
+        <div class="form-group">
+            <select class="form-select" th:field="*{gender}">
+                <option value="">Choose</option>
+                <div th:each="c : ${sex}">
+                    <option th:value="${c}" th:text="${c}"></option>
+                </div>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="country">Quốc tịch</label>
+            <input type="text" class="form-control" id="country" th:field="*{country}" />
+        </div>
+        <div class="form-group">
+            <label for="idCard">Số hộ chiếu hoặc số CMND hoặc giấy thông hành hợp pháp khác</label>
+            <input th:field="*{idCard}" type="text" class="form-control" id="idCard" />
+        </div>
+        <div class="form-group">
+            <div>Thông tin đi lại</div>
+            <div class="form-check form-check-inline" th:each="vehicle : ${vehicles}">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" th:field="*{travel}"
+                       th:id="${vehicle}" th:value="${vehicle}">
+                <label class="form-check-label" th:for="${vehicle}" th:text="${vehicle}"></label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="startDay">Ngày khởi hành</label>
+            <input type="date" class="form-control" id="startDay" th:field="*{startDate}" />
+        </div>
+        <div class="form-group">
+            <label for="endDay">Ngày kết thúc</label>
+            <input type="date" class="form-control" id="endDay" th:field="*{endDate}" />
+        </div>
+        <div class="form-group">
+            <label for="more">Thong tin them</label>
+            <input type="text" class="form-control" id="more" th:field="*{moreInformation}" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</body>
+</html>
