@@ -1,5 +1,6 @@
 package codegym.config;
 
+import codegym.formatter.SongFormatter;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
@@ -17,6 +18,7 @@ import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -34,7 +36,7 @@ import java.util.Properties;
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "codegym")
-@PropertySource("classpath:upload_file.properties")
+@EnableTransactionManagement
 public class AppConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
     private ApplicationContext applicationContext;
     @Override
@@ -76,13 +78,19 @@ public class AppConfig extends WebMvcConfigurerAdapter implements ApplicationCon
         return messageSource;
     }
 
+    @Override
+    public void addFormatters(FormatterRegistry registry) {
+        registry.addFormatter(applicationContext.getBean(SongFormatter.class));
+        super.addFormatters(registry);
+    }
+
     // Config hibernate
     // Step 1: config datasource (thông tin kết nối DB)
     @Bean
     public DriverManagerDataSource getDataSource() {
         DriverManagerDataSource datasource = new DriverManagerDataSource();
         datasource.setDriverClassName("com.mysql.jdbc.Driver");
-        datasource.setUrl("jdbc:mysql://localhost:3306/cms?useSSL=false&useUnicode=true&characterEncoding=utf8");
+        datasource.setUrl("jdbc:mysql://localhost:3306/song?useSSL=false&useUnicode=true&characterEncoding=utf8");
         datasource.setUsername("root");
         datasource.setPassword("12345678");
         return datasource;

@@ -13,7 +13,7 @@ import java.util.List;
 @Transactional
 public class SongRepositoryImpl implements SongRepository {
     @PersistenceContext
-    EntityManager entityManager;
+    private EntityManager entityManager;
 
     @Override
     public void create(Song song) {
