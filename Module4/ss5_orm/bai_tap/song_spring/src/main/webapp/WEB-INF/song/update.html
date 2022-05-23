@@ -10,23 +10,24 @@
 <div class="container">
     <div th:replace="~{song/template.html::header}"></div>
     <form th:action="@{/song/update}" th:method="post" th:object="${song}">
+        <input type="text" th:field="*{id}" th:name="id" hidden >
         <div class="form-group">
             <label for="name">Name song</label>
-            <input type="text" class="form-control" id="name" th:field="*{nameSong}"  placeholder="Enter name song">
+            <input type="text" class="form-control" id="name" th:field="*{nameSong}">
         </div>
         <div class="form-group">
             <label for="author">Author</label>
-            <input type="text" class="form-control" id="author" th:field="*{author}"  placeholder="Enter author">
+            <input type="text" class="form-control" id="author" th:field="*{author}" >
         </div>
         <div class="form-group">
             <label for="category">Category</label>
-            <input type="text" class="form-control" id="category" th:field="*{category}"  placeholder="Enter category">
+            <input type="text" class="form-control" id="category" th:field="*{category}">
         </div>
         <div class="form-group">
             <label for="path">Path</label>
-            <input type="text" class="form-control" id="path" th:field="*{path}"  placeholder="Enter path">
+            <input type="text" class="form-control" id="path" th:field="*{path}"  >
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" th:value="Save">Submit</button>
     </form>
     <div th:insert="~{song/template.html::footer}"></div>
 </div>

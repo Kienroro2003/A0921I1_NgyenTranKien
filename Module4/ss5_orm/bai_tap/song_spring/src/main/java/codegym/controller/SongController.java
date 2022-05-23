@@ -39,7 +39,7 @@ public class SongController {
     }
 
     @PostMapping("/update")
-    public ModelAndView update(@ModelAttribute("song")Song song){
+    public ModelAndView update(Song song){
         songService.update(song);
         return new ModelAndView("redirect:/song/list");
     }
