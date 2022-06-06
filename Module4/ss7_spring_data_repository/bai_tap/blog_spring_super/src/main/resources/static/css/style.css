@@ -35,12 +35,25 @@ button {
     color: #fff;
 }
 
+td button a{
+    color:#fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
 td button:nth-child(1) {
     background-color: #0298cf;
 }
 
 td button:nth-child(2) {
     background-color: #f90000;
+}
+
+td button:nth-child(3) {
+    background-color: #000000;
 }
 
 .add_new {

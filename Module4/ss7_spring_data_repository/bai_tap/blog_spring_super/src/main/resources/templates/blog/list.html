@@ -1,10 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <!--    <link rel="stylesheet" href="/static/css/style.css" />-->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <title>List</title>
 </head>
 <body>
-$END$
+<div class="table">
+    <div class="table_header">
+        <p>Blog</p>
+        <form th:action="@{/blog/list}" th:method="get">
+            <div>
+                <select th:name="category">
+                    <option value="">Choose Category</option>
+                    <div th:each="category : ${categories}">
+                        <option th:value="${category.id}" th:text="${category.categoryName}"></option>
+                    </div>
+
+                </select>
+                <input type="text" th:name="author" placeholder="Search author"/>
+                <button class="add_new"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <button class="add_new"><a th:href="@{/blog/create}">+ Add New</a></button>
+    </div>
+</div>
+<div class="table_section">
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody th:each="blog:${blogs}" th:object="${blog}">
+        <tr>
+            <td th:text="*{id}"></td>
+            <td th:text="*{title}"></td>
+            <td th:text="*{content}"></td>
+            <td th:text="*{author}"></td>
+            <td th:text="${blog.category.categoryName}"></td>
+            <td>
+                <button type="submit"><a th:href="@{/blog/edit/(id=${blog.id})}"><i
+                        class="fa-solid fa-pen-to-square"></i></a></button>
+                <button type="submit"><a th:href="@{/blog/delete/(id=${blog.id})}"><i class="fa-solid fa-trash"></i></a>
+                </button>
+                <button type="submit"><a th:href="@{/blog/view/(id=${blog.id})}"><i class="fa-solid fa-eye"></i></a>
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a th:href="@{/blog/list/(page=${blogs.first})}" th:if="${!blogs.isFirst()}" style="color: black">first</a>
+    <a th:href="@{/blog/list/(page=${blogs.number - 1})}" th:if="${blogs.hasPrevious()}"
+       style="color: black">Previous</a>
+    <span th:text="${blogs.number + 1}"></span>/<span th:text="${blogs.totalPages}"></span>
+    <a th:href="@{/blog/list/(page=${blogs.number + 1})}" th:if="${blogs.hasNext()}" style="color: black">Next</a>
+    <a th:href="@{/blog/list/(page=${blogs.totalPages - 1})}" th:if="${!blogs.isLast()}" style="color: black">last</a>
+</div>
 </body>
 </html>
