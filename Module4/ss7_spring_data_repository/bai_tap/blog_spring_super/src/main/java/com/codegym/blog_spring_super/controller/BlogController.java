@@ -24,6 +24,7 @@ public class BlogController {
     @Autowired
     private BlogService blogService;
 
+
     @ModelAttribute("findAllCategories")
     public List<Category> getListCategories(){
         return categoryService.findAll();

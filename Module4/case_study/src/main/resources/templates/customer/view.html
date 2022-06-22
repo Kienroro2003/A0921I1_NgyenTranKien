@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:include="~{fragments/head}">
+</head>
+<body>
+<div class="container-fluid">
+    <h1>Create customer</h1>
+    <a th:href="@{/customer/list}">Back to list</a>
+    <div th:object="${customer}">
+        <div class="form-group">
+            <label for="title">Name</label>
+            <input type="text" class="form-control" id="title"
+                   placeholder="Enter title" th:field="*{customerName}" disabled/>
+            <label for="birthday">Birthday</label>
+            <input type="date" class="form-control" id="birthday"
+                   placeholder="Enter title" th:field="*{customerBirthday}" disabled/>
+            <label>Gender</label>
+            <input type="text" class="form-control"
+                   placeholder="Enter title" th:field="*{customerGender}" disabled/>
+            <label for="idCard">Id card</label>
+            <input type="text" class="form-control" id="idCard"
+                   placeholder="Enter title" th:field="*{customerIdCard}" disabled/>
+            <label for="phone">Phone number</label>
+            <input type="text" class="form-control" id="phone"
+                   placeholder="Enter title" th:field="*{customerPhone}" disabled/>
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address"
+                   placeholder="Enter title" th:field="*{customerAddress}" disabled/>
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email"
+                   placeholder="Enter title" th:field="*{customerEmail}" disabled/>
+            <div class="form-group">
+                <label>Customer type</label>
+                <input type="text" class="form-control"
+                       placeholder="Enter title" th:field="*{customerType.customerTypeName}" disabled/>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

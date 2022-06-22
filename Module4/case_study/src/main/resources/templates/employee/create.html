@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:include="~{fragments/head}">
+</head>
+<body>
+<div class="container-fluid">
+    <h1>Create employee</h1>
+    <a th:href="@{/employee/list}">Back to list</a>
+    <form th:method="post" th:action="@{/employee/create}" th:object="${createEmployee}">
+        <div class="form-group">
+            <label for="title">Name</label>
+            <input type="text" class="form-control" id="title"
+                   placeholder="Enter title" th:field="*{employeeName}"/>
+            <div th:if="${#fields.hasErrors('employeeName')}" th:errors="*{employeeName}"></div>
+            <label for="birthday">Birthday</label>
+            <input type="date" class="form-control" id="birthday"
+                   placeholder="Enter title" th:field="*{employeeBirthday}"/>
+            <label>Gender</label>
+            <label for="idCard">Id card</label>
+            <input type="text" class="form-control" id="idCard"
+                   placeholder="Enter title" th:field="*{employeeIdCard}"/>
+            <div th:if="${#fields.hasErrors('employeeIdCard')}" th:errors="*{employeeIdCard}"></div>
+            <label for="phone">Phone number</label>
+            <input type="text" class="form-control" id="phone"
+                   placeholder="Enter title" th:field="*{employeePhone}"/>
+            <div th:if="${#fields.hasErrors('employeePhone')}" th:errors="*{employeePhone}"></div>
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address"
+                   placeholder="Enter title" th:field="*{employeeAddress}"/>
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email"
+                   placeholder="Enter title" th:field="*{employeeEmail}"/>
+            <div th:if="${#fields.hasErrors('employeeEmail')}" th:errors="*{employeeEmail}"></div>
+            <label for="salary">Salary</label>
+            <input type="number" class="form-control" id="salary"
+                   placeholder="Enter title" th:field="*{employeeSalary}"/>
+            <div class="form-group">
+                <label>Employee position</label>
+                <select th:field="*{position}">
+                    <option value="">Choose</option>
+                    <div th:each="c : ${positions}">
+                        <option th:value="${c.id}"
+                                th:text="${c.positionName}"
+                                th:selected="${c.id == createEmployee.position.id}"></option>
+                    </div>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Employee divicion</label>
+                <select th:field="*{division}">
+                    <option value="">Choose</option>
+                    <div th:each="c : ${divisions}">
+                        <option th:value="${c.id}"
+                                th:text="${c.divisionName}"
+                                th:selected="${c.id == createEmployee.division.id}"></option>
+                    </div>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Employee education degree</label>
+                <select th:field="*{educationDegree}">
+                    <option value="">Choose</option>
+                    <div th:each="c : ${educationDegrees}">
+                        <option th:value="${c.educationDegreeId}"
+                                th:text="${c.educationDegreeName}"
+                                th:selected="${c.educationDegreeId == createEmployee.educationDegree.educationDegreeId}"></option>
+                    </div>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.table {
+    width: 100%;
+}
+
+.table_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+}
+
+.table_header p {
+    color: #000000;
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+}
+
+td button a{
+    color:#fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+td button:nth-child(1) {
+    background-color: #0298cf;
+}
+
+td button:nth-child(2) {
+    background-color: #f90000;
+}
+
+td button:nth-child(4) {
+    background-color: #000000;
+}
+
+.add_new {
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #0298cf;
+}
+
+input {
+    padding: 10px 20px;
+    margin: 0px 10px;
+    outline: none;
+    border: 1px solid #0298cf;
+    border-radius: 6px;
+    color: #0298cf;
+}
+
+::placeholder {
+    color: #0298cf;
+}
+
+.table_section {
+    height: 650px;
+    table-layout: fixed;
+}
+
+table {
+    width: 100%;
+    overflow: auto;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f6f9fc;
+    color: #8493a5;
+    font-size: 15px;
+}
+
+td,
+th {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+}
+
+tr:hover td {
+    color: #0298cf;
+    cursor: pointer;
+    background-color: #f6f9fc;
+}
+
+select {
+    outline: none;
+    padding: 9px 20px;
+    border: 1px solid #0298cf;
+    border-radius: 6px;
+    width: 150px;
+}

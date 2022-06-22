@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<!--<head th:include="~{template/head}"></head>-->
+<div th:include="~{fragments/head}"></div>
+<body>
+<div class="table">
+  <div class="table_header">
+    <p>Product</p>
+    <form th:action="@{/employee/list}">
+      <div>
+        <!--                <select name="" id="">-->
+        <!--                    <option value="">1</option>-->
+        <!--                    <option value="">Da nang</option>-->
+        <!--                    <option value="">1</option>-->
+        <!--                </select>-->
+        <input type="text" th:name="name" placeholder="Search name"/>
+        <button th:type="submit" class="add_new"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="add_new"><a th:href="@{/employee/create}" style="color: white; text-decoration: none">+ Add New</a></button>
+      </div>
+    </form>
+  </div>
+  <div class="table_section">
+    <table>
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Birthday</th>
+        <th>Id card</th>
+        <th>Phone number</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>Salary</th>
+        <th>Position</th>
+        <th>Division</th>
+        <th>Education degree</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <div th:each="employee : ${employees}" th:object="${employee}">
+        <tr>
+          <td th:text="*{employeeId}"></td>
+          <td th:text="*{employeeName}"></td>
+          <td th:text="*{employeeBirthday}"></td>
+          <td th:text="*{employeeIdCard}"></td>
+          <td th:text="*{employeePhone}"></td>
+          <td th:text="*{employeeAddress}"></td>
+          <td th:text="*{employeeEmail}"></td>
+          <td th:text="*{employeeSalary}"></td>
+          <td th:text="*{position.positionName}"></td>
+          <td th:text="*{division.divisionName}"></td>
+          <td th:text="*{educationDegree.educationDegreeName}"></td>
+          <td>
+            <button type="submit"><a th:href="@{/employee/edit/(id=${employee.employeeId})}"><i
+                    class="fa-solid fa-pen-to-square"></i></a></button>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal"
+                    th:data-target="'#exampleModal' + ${employee.employeeId}">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" th:id="'exampleModal' + ${employee.employeeId}" tabindex="-1"
+                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Bạn có muốn xoá: <span th:text="*{employeeName}"></span></p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                    </button>
+                    <button type="submit"><a
+                            th:href="@{/employee/delete/(id=${employee.employeeId})}"><i
+                            class="fa-solid fa-trash"></i></a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit"><a th:href="@{/employee/view/(id=${employee.employeeId})}"><i
+                    class="fa-solid fa-eye"></i></a>
+            </button>
+          </td>
+        </tr>
+      </div>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

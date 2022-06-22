@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<form th:action="@{/registor}" th:method="post" th:object="${createCustomer}">
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" th:field="*{name}" class="form-control">
+        <span th:if="${#fields.hasErrors('name')}" th:errors = "*{name}"></span>
+    </div>
+    <div class="form-group">
+        <label>Id card</label>
+        <input type="text" th:field="*{idCard}" class="form-control">
+        <span th:if="${#fields.hasErrors('idCard')}" th:errors = "*{idCard}"></span>
+    </div>
+    <div class="form-group">
+        <label>Phone</label>
+        <input type="text" th:field="*{phone}" class="form-control">
+        <span th:if="${#fields.hasErrors('phone')}" th:errors = "*{phone}"></span>
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="text" th:field="*{email}" class="form-control">
+        <span th:if="${#fields.hasErrors('email')}" th:errors = "*{email}"></span>
+    </div>
+    <button th:type="submit" >Register</button>
+</form>
+</body>
+</html>
