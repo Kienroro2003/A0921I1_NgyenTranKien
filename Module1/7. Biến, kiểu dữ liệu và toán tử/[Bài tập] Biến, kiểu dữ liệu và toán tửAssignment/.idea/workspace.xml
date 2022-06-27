@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3fd406f8-f59b-44d1-a42d-1a41f2a1873d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../6. Tổng quan JavaScript/[Bài giảng] Sự kiện onchange/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6. Tổng quan JavaScript/[Bài giảng] Sự kiện onchange/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6. Tổng quan JavaScript/[Bài giảng] Sự kiện onchange/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../6. Tổng quan JavaScript/[Bài giảng] Sự kiện onclick/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module5/ss1_typescript/bai_tap/typescript_fibonacci/.idea/typescript_fibonacci.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module5/ss1_typescript/thuc_hanh/TypescriptProject/.idea/TypescriptProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module5/ss1_typescript/thuc_hanh/typescript_control_flow_and_loop/.idea/typescript_control_flow_and_loop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module5/ss1_typescript/thuc_hanh/typescript_is_prime/.idea/typescript_is_prime.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module5/ss1_typescript/thuc_hanh/typescript_promise/.idea/typescript_promise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module5/ss1_typescript/thuc_hanh/typescript_shape/.idea/typescript_shape.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module5/ss1_typescript/thuc_hanh/typescript_variable/.idea/typescript_variable.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module4/ss1_tong_quan_spring/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module4/ss1_tong_quan_spring/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module4/ss2_spring_controller/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module4/ss2_spring_controller/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module4/ss5_orm/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module4/ss5_orm/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module4/ss9_AOP_Exception_Handling/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module4/ss9_AOP_Exception_Handling/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/bai_tap/typescript_fibonacci/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/bai_tap/typescript_fibonacci/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/bai_tap/typescript_fibonacci/.idea/typescript_fibonacci.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/bai_tap/typescript_fibonacci/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/bai_tap/typescript_fibonacci/dist/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/bai_tap/typescript_fibonacci/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/bai_tap/typescript_fibonacci/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/TypescriptProject/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/TypescriptProject/.idea/TypescriptProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/TypescriptProject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/TypescriptProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/TypescriptProject/ng.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/TypescriptProject/ng.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_control_flow_and_loop/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_control_flow_and_loop/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_control_flow_and_loop/.idea/typescript_control_flow_and_loop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_control_flow_and_loop/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_control_flow_and_loop/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_control_flow_and_loop/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_control_flow_and_loop/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_control_flow_and_loop/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_control_flow_and_loop/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_is_prime/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_is_prime/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_is_prime/.idea/typescript_is_prime.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_is_prime/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_is_prime/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_is_prime/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_is_prime/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_is_prime/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_is_prime/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_promise/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_promise/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_promise/.idea/typescript_promise.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_promise/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_promise/dist/main.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_promise/dist/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_promise/dist/main.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_promise/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_promise/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_promise/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_promise/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/.idea/typescript_shape.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/dist/IArea.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/dist/IArea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/dist/IArea.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/dist/main.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/dist/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/dist/main.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/dist/rectangle.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/dist/rectangle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/dist/rectangle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/dist/shape.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/dist/shape.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/dist/shape.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/src/IArea.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/src/rectangle.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/src/shape.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_shape/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_variable/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_variable/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_variable/.idea/typescript_variable.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_variable/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_variable/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_variable/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_variable/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_variable/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/thuc_hanh/typescript_variable/tsconfig.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2B9EenGIDaxptMPnHRzSizH2Tbc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/kienroro2003/Documents/CodeGym/A0921I1_NgyenTranKien/Module1/7. Biến, kiểu dữ liệu và toán tử/[Bài tập] Biến, kiểu dữ liệu và toán tửAssignment",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3fd406f8-f59b-44d1-a42d-1a41f2a1873d" name="Changes" comment="" />
+      <created>1656309997178</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656309997178</updated>
+      <workItem from="1656309998375" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
