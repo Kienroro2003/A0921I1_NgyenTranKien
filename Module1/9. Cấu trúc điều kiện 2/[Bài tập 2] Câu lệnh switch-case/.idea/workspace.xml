@@ -16,10 +16,28 @@
       <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Bài tập] Biến, kiểu dữ liệu và toán tửAssignment/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Bài tập] Biến, kiểu dữ liệu và toán tửAssignment/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Bài tập] Biến, kiểu dữ liệu và toán tửAssignment/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Bài tập] Ứng dụng chuyển đổi tiền tệ/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Bài tập] Ứng dụng chuyển đổi tiền tệ/.idea/[Bài tập] Ứng dụng chuyển đổi tiền tệ.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Bài tập] Ứng dụng chuyển đổi tiền tệ/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Bài tập] Ứng dụng chuyển đổi tiền tệ/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Bài tập] Ứng dụng chuyển đổi tiền tệ/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Bài tập] Ứng dụng máy tính/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Bài tập] Ứng dụng máy tính/.idea/[Bài tập] Ứng dụng máy tính.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Bài tập] Ứng dụng máy tính/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Bài tập] Ứng dụng máy tính/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Thực hành] Sử dụng toán tử/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Thực hành] Sử dụng toán tử/.idea/[Thực hành] Sử dụng toán tử.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Thực hành] Sử dụng toán tử/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Thực hành] Sử dụng toán tử/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../7. Biến, kiểu dữ liệu và toán tử/[Thực hành] Sử dụng toán tử/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../8. Cấu trúc điều kiện 1/[Thực hành 4] Luyện tập với cấu trúc switch-case/Bài 1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../8. Cấu trúc điều kiện 1/[Thực hành 4] Luyện tập với cấu trúc switch-case/Bài 1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../8. Cấu trúc điều kiện 1/[Thực hành 4] Luyện tập với cấu trúc switch-case/Bài 1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/[Bài tập 2] Câu lệnh switch-case.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../Module5/ss1_typescript/bai_tap/typescript_fibonacci/.idea/typescript_fibonacci.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../Module5/ss1_typescript/thuc_hanh/TypescriptProject/.idea/TypescriptProject.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../Module5/ss1_typescript/thuc_hanh/typescript_control_flow_and_loop/.idea/typescript_control_flow_and_loop.iml" afterDir="false" />
@@ -123,15 +141,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/kienroro2003/Documents/CodeGym/A0921I1_NgyenTranKien/Module1/9. Cấu trúc điều kiện 2/[Bài tập 2] Câu lệnh switch-case",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kienroro2003/Documents/CodeGym/A0921I1_NgyenTranKien/Module1/9. Cấu trúc điều kiện 2/[Bài tập 2] Câu lệnh switch-case&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -141,10 +159,22 @@
       <option name="presentableId" value="Default" />
       <updated>1656310088873</updated>
       <workItem from="1656310090044" duration="5000" />
+      <workItem from="1656310336993" duration="46000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

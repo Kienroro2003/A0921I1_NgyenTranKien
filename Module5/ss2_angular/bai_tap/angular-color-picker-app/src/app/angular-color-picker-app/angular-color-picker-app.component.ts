@@ -6,6 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./angular-color-picker-app.component.css']
 })
 export class AngularColorPickerAppComponent implements OnInit {
+  col:string = "#000";
+
+  setColor(color: any){
+    this.col = color.value;
+    console.log(this.col);
+  }
+
 
   constructor() { }
 

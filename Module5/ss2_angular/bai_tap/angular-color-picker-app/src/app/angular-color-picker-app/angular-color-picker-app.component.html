@@ -1,1 +1,7 @@
-<p>angular-color-picker-app works!</p>
+<div class="form-group container">
+  <label for="exampleInputEmail1">Color</label>
+  <input type="color" class="form-control" id="exampleInputEmail1" (change)="setColor($event.target)">
+  <h2 [style.color]="col">{{col}}</h2>
+</div>
+
+

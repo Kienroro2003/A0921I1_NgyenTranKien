@@ -1,29 +1,19 @@
-<div class="wrap">
-  <form name="cal">
-    <input type="text" name="display">
-    <br><br>
-    <input type="button" value="7" (click)="$event." )>
-    <input type="button" value="8" onClick="cal.display.value+='8'">
-    <input type="button" value="9" onClick="cal.display.value+='9'">
-    <input type="button" value="+" onClick="cal.display.value+='+'">
-    <br><br>
-    <input type="button" value="4" onClick="cal.display.value+='4'">
-    <input type="button" value="5" onClick="cal.display.value+='5'">
-    <input type="button" value="6" onClick="cal.display.value+='6'">
-    <input type="button" value="-" onClick="cal.display.value+='-'">
-    <br><br>
-    <input type="button" value="1" onClick="cal.display.value+='1'">
-    <input type="button" value="2" onClick="cal.display.value+='2'">
-    <input type="button" value="3" onClick="cal.display.value+='3'">
-    <input type="button" value="*" onClick="cal.display.value+='*'">
-    <br><br>
-    <input type="button" value="0" onClick="cal.display.value+='0'">
-    <input type="button" value="/" onClick="cal.display.value+='/'">
-    <input type="button" value="%" onClick="cal.display.value+='%'">
-    <input type="button" value="=" onClick="cal.display.value =eval(cal.display.value)">
-    <br><br>
-    <input type="button" value="DELETE" onClick="cal.display.value=''" id="del">
-    <input type="button" value=" √ " onClick="sq()">
-    <input type="button" value="." onClick="cal.display.value+='.'">
-  </form>
+<div class="container">
+  <div class="form-group">
+    <label for="first">First number</label>
+    <input type="text" class="form-control" id="first" (change)="setFirstNumber($event.target)">
+  </div>
+  <div class="form-group">
+    <label for="second">Second number</label>
+    <input type="text" class="form-control" id="second" (change)="setSecondNumber($event.target)">
+  </div>
+  <div class="p-0 col-6">
+    <div class="d-flex justify-content-between">
+      <button type="button" class="col-2 btn btn-primary" (click)="choiceCal($event.target)" value="+">+</button>
+      <button type="button" class="col-2 btn btn-secondary" (click)="choiceCal($event.target)" value="-">-</button>
+      <button type="button" class="col-2 btn btn-success" (click)="choiceCal($event.target)" value="*">*</button>
+      <button type="button" class="col-2 btn btn-danger" (click)="choiceCal($event.target)" value="/">/</button>
+    </div>
+  </div>
+  <h1>Ket qua: {{total}}</h1>
 </div>
