@@ -1,83 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5f064435-59f6-4a7c-952b-1c98a486500c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vscode/tasks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/countdown-timer/countdown-timer.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/countdown-timer/countdown-timer.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/countdown-timer/countdown-timer.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/countdown-timer/countdown-timer.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../angular-rating-bar/src/app/module/IRatingUnit.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../angular-rating-bar/src/app/rating-bar-component/rating-bar-component.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../angular-rating-bar/src/app/rating-bar-component/rating-bar-component.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../angular-rating-bar/src/app/rating-bar-component/rating-bar-component.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../angular-rating-bar/src/app/rating-bar-component/rating-bar-component.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-name-card/src/app/name-card/name-card.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-name-card/src/app/name-card/name-card.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-name-card/src/app/name-card/name-card.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-name-card/src/app/name-card/name-card.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-name-card/src/assets/6.6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-name-card/src/assets/angular.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/.vscode/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/.vscode/tasks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/angular-progress-bar/tsconfig.spec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Module4/ss1_tong_quan_spring/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module4/ss1_tong_quan_spring/thuc_hanh/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Module4/ss2_spring_controller/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module4/ss2_spring_controller/thuc_hanh/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Module4/ss5_orm/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module4/ss5_orm/thuc_hanh/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Module4/ss9_AOP_Exception_Handling/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module4/ss9_AOP_Exception_Handling/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/countdown-timer/countdown-timer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/countdown-timer/countdown-timer.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +38,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/kienroro2003/Documents/CodeGym/A0921I1_NgyenTranKien/Module5/ss4_component_interation/bai_tap/angular-countdown-timer-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "ts.external.directory.path": "/Users/kienroro2003/Documents/CodeGym/A0921I1_NgyenTranKien/Module5/ss4_component_interation/bai_tap/angular-countdown-timer-app/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
@@ -137,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656673608957</updated>
-      <workItem from="1656673610278" duration="324000" />
+      <workItem from="1656673610278" duration="3575000" />
     </task>
     <servers />
   </component>

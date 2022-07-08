@@ -1,0 +1,71 @@
+<div class="container">
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="id">Email</label>
+      <input type="text" class="form-control" id="id" formControlName="email">
+      <div class="error" *ngIf="registerForm.controls['email'].hasError('required') && registerForm.touched">Không được
+        trống
+      </div>
+      <div class="error" *ngIf="registerForm.controls['email'].hasError('minlength') && registerForm.touched">Nhiều hơn
+        5 kí tự
+      </div>
+    </div>
+    <div formGroupName="pwGroup">
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" formControlName="password">
+        <div class="error" *ngIf="registerForm.controls['pwGroup'].get('password')?.hasError('required') && registerForm.touched">Không
+          được trống
+        </div>
+        <div class="error" *ngIf="registerForm.controls['pwGroup'].get('password')?.hasError('minlength') && registerForm.touched">Nhiều
+          hơn 6 kí tự
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm password</label>
+        <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword">
+        <div class="error" *ngIf="registerForm.controls['pwGroup'].get('confirmPassword')?.hasError('required') && registerForm.touched">
+          Không được trống
+        </div>
+        <div class="error" *ngIf="registerForm.hasError('passwordNotMatch',['pwGroup']) && registerForm.controls['pwGroup'].touched">
+          Password does not match!
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="country">Country</label>
+      <select id="country" class="form-select" aria-label="Default select example" formControlName="country">
+        <option selected>Open this select menu</option>
+        <option *ngFor="let country of countries" value="{{country}}">{{country}}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" class="form-control" id="age" formControlName="age">
+      <div class="error" *ngIf="registerForm.controls['age'].hasError('min') && registerForm.touched">Không được trống
+      </div>
+    </div>
+    <div class="form-group">
+      <label >Gender</label>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" formControlName="gender" id="inlineRadio1" value="true">
+        <label class="form-check-label" for="inlineRadio1">Nam</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" formControlName="gender" id="inlineRadio2" value="false">
+        <label class="form-check-label" for="inlineRadio2">Nữ</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="phoneNumber">Phone</label>
+      <input type="text" class="form-control" id="phoneNumber" formControlName="phone">
+      <div class="error" *ngIf="registerForm.controls['phone'].hasError('required') && registerForm.touched">
+        Không được trống
+      </div>
+      <div class="error" *ngIf="registerForm.controls['phone'].hasError('pattern') && registerForm.touched">
+        Tên không đúng định dạng
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary"  [disabled]="!registerForm.valid">Submit</button>
+  </form>
+</div>

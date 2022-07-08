@@ -17,6 +17,7 @@ export class CountdownTimerComponent implements OnInit, OnChanges, OnDestroy {
 
   ngOnChanges(changes: SimpleChanges) {
     if ('seconds' in changes) {
+      console.log(this.seconds);
       let v = changes['seconds'].currentValue;
       v = typeof v === 'undefined' ? 11 : v;
       const vFixed = Number(v);
@@ -29,6 +30,7 @@ export class CountdownTimerComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   ngOnInit() {
+    //khởi tạo 1 lần
     this.reset();
   }
 
