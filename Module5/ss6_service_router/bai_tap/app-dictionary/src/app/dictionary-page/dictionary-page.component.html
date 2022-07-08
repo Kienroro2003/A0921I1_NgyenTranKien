@@ -1,0 +1,20 @@
+<div class="container">
+  <table class="table">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">Index</th>
+      <th scope="col">Word</th>
+      <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let word of vocabularies; index as i">
+      <td>{{i + 1}}</td>
+      <td>{{word.word}}</td>
+      <td>
+        <button class="btn btn-primary" [routerLink]="['/detail', word.word]">Info</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
