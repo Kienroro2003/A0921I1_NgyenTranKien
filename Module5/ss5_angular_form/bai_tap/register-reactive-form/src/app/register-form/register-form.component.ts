@@ -32,10 +32,7 @@ export class RegisterFormComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.registerForm);
-    console.log(this.registerForm.controls['pwGroup'].get('password')?.hasError('required'));
-    console.log(this.registerForm.controls['pwGroup']);
-    console.log(this.registerForm.controls['pwGroup']['valueChanges']);
+    alert("Đăng kí thành công tài khoản " + this.registerForm.value['email']);
   }
 
   comparePassword( c : AbstractControl) {
