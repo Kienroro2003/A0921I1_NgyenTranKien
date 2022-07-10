@@ -9,16 +9,18 @@ import {DictionaryServiceService} from "../service/dictionary-service.service";
 })
 export class DictionaryPageComponent implements OnInit {
   vocabularies: IWord[] = [];
+  search: string = "";
   constructor(private dictionaryServiceService: DictionaryServiceService) { }
 
   ngOnInit(): void {
     this.getAll();
   }
 
-  getAll(){
-    this.vocabularies = this.dictionaryServiceService.getAll();
+  getAll(word: string = ""){
+    this.vocabularies = this.dictionaryServiceService.getAll(word);
   }
 
-
-
+  findAllByWord(){
+    this.getAll(this.search);
+  }
 }

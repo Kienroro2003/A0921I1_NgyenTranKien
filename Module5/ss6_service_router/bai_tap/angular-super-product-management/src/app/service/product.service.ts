@@ -42,4 +42,20 @@ export class ProductService {
   saveProduct(product: Product) {
     this.products.push(product);
   }
+
+  delete(id: number):void{
+    console.log(id);
+    this.products=this.products.filter((item)=>item.id != id);
+
+  }
+
+  findById(id: number):Product{
+    let product: any;
+    for(let temp of this.products){
+      if(temp.id == id){
+        product = temp;
+      }
+    }
+    return product;
+  }
 }

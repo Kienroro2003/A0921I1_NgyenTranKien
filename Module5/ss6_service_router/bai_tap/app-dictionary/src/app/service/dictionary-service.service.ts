@@ -30,8 +30,12 @@ export class DictionaryServiceService {
   ];
   constructor() { }
 
-  getAll(){
-    return this.vocabularies;
+  getAll(word: string){
+    if(word == ""){
+      return this.vocabularies;
+    }else{
+      return this.vocabularies.filter((item)=>word== item.word);
+    }
   }
 
   findByWord(wordParam: string | null){

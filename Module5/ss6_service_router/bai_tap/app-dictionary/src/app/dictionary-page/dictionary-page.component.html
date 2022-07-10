@@ -1,4 +1,6 @@
 <div class="container">
+  <input class="form-control" type="text" placeholder="Search" [(ngModel)]="search" aria-label="Search">
+  <button class="btn btn-primary" (click)="findAllByWord()">Search</button>
   <table class="table">
     <thead class="thead-dark">
     <tr>

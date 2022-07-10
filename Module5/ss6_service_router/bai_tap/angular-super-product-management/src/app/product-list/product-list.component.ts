@@ -19,4 +19,7 @@ export class ProductListComponent implements OnInit {
     this.products = this.productService.getAll();
   }
 
+  onDelete(id: any) {
+    this.productService.delete(id.value);
+  }
 }
