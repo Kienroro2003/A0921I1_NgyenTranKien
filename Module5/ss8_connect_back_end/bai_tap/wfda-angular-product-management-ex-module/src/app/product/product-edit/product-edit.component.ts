@@ -55,10 +55,14 @@ export class ProductEditComponent implements OnInit {
   // }
 
   updateProduct(id: number) {
-    let temp: Product = this.productForm.controls;
+    let temp: Product = this.productForm.value;
     console.log(temp);
     this.productService.updateProduct(id,temp).subscribe(next=>{
       this.router.navigateByUrl("product/list");
     })
+  }
+
+  compareFn(category1: Category, category2: Category){
+    return category1 && category2 ? category1.id === category2.id : category1 === category2;
   }
 }

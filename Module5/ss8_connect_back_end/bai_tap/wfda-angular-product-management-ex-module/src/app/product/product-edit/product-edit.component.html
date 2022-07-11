@@ -20,9 +20,9 @@
     <tr>
       <td>Thể loại</td>
       <td>
-        <select formControlName="category">
+        <select formControlName="category" [compareWith]="compareFn">
           <option>Chọn thể loại</option>
-          <option *ngFor="let category of categories" value="{{category.name}}">{{category.name}}</option>
+          <option *ngFor="let category of categories" [ngValue]="category">{{category.name}}</option>
         </select>
       </td>
     </tr>

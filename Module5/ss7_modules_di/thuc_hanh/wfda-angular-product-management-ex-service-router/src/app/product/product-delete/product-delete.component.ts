@@ -18,14 +18,12 @@ export class ProductDeleteComponent implements OnInit {
               private router: Router) {
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       this.id = +paramMap.get('id');
-      this.productService.findById(this.id).subscribe(next => {
-        this.productForm = new FormGroup({
-          id: new FormControl(this.id),
-          name: new FormControl(next.name),
-          price: new FormControl(next.price),
-          description: new FormControl(next.description),
-          category: new FormControl(next.category)
-        });
+      const product = this.getProduct(this.id);
+      this.productForm = new FormGroup({
+        id: new FormControl(product.id),
+        name: new FormControl(product.name),
+        price: new FormControl(product.price),
+        description: new FormControl(product.description),
       });
     });
   }
@@ -38,10 +36,7 @@ export class ProductDeleteComponent implements OnInit {
   }
 
   deleteProduct(id: number) {
-    // this.productService.deleteProduct(id);
-    // this.router.navigate(['/product/list']);
-    this.productService.deleteProduct(this.id).subscribe(()=>{
-      this.router.navigateByUrl("product/list")
-    })
+    this.productService.deleteProduct(id);
+    this.router.navigate(['/product/list']);
   }
 }
