@@ -1,0 +1,90 @@
+#header {
+  background-color: #23282d;
+  padding: 28px 0px 9px;
+}
+
+#header a img {
+  padding-top: 7px;
+}
+
+#header form {
+  position: relative;
+}
+
+#header form input {
+  padding: 9px 33px 9px 13px;
+  background-color: #131619;
+  outline: none;
+  border: none;
+}
+
+#header form input::placeholder {
+  color: #909090;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+#header form input:focus {
+  color: #909090;
+}
+
+#header form button {
+  position: absolute;
+  background-color: #131619;
+  outline: none;
+  border: none;
+  color: #565758;
+  right: 0px;
+  top: 0px;
+  padding: 13px 13px;
+}
+
+nav {
+  padding-top: 8px;
+  flex: 100%;
+}
+
+nav ul#main-menu {
+  border-right: 10px solid #ff2d2d;
+  margin-bottom: 0px;
+}
+
+ul#main-menu li a {
+  line-height: 16px;
+  display: block;
+  padding: 12px 21px 8px;
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+ul#main-menu li:hover a {
+  color: #4db2ec;
+}
+
+ul#main-menu li:first-child a {
+  padding-left: 0px;
+}
+
+.justify-content-between{
+  justify-content:space-between;
+}
+
+.mt-7{
+  margin-top:7px;
+}
+
+.pt-20{
+  padding-top:20px;
+}
+.pt-30{
+  padding-top:30px;
+}
+
+.d-flex{
+  display:flex;
+}
+
+.jbw{
+  justify-content: space-between;
+}

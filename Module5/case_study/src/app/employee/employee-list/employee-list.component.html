@@ -1,0 +1,68 @@
+<div class="container">
+  <input type="text" [(ngModel)]="name" >
+  <input type="text" [(ngModel)]="email" >
+  <button (click)="search()">Search</button>
+  <div class=" pt-20" style="width: 100%; ">
+    <table class="table table-striped table-bordered" style="width: 100%;" id="tableCustomer">
+      <thead>
+      <tr style="background-color: #FF2C2B;">
+        <th>STT</th>
+        <th>Id Customer</th>
+        <th>Name</th>
+        <th>Birthday</th>
+        <th>Id Card</th>
+        <th>Phone number</th>
+        <th>Email</th>
+        <th>Level</th>
+        <th>Position</th>
+        <th>Department</th>
+        <th>Salary</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let employee of employees | paginate: { itemsPerPage: 2, currentPage: p };index as i">
+        <td>{{i + 1}}</td>
+        <td>{{employee.idEmployee}}</td>
+        <td>{{employee.nameEmployee}}</td>
+        <td>{{employee.dateOfBirth|date:"dd/MM/yyyy"}}</td>
+        <td>{{employee.idCard}}</td>
+        <td>{{employee.phoneNumber}}</td>
+        <td>{{employee.email}}</td>
+        <td>{{employee.level.name}}</td>
+        <td>{{employee.position.name}}</td>
+        <td>{{employee.department.name}}</td>
+        <td>{{employee.salary|currency:'VND'}}</td>
+        <td>
+          <button type="button" class="btn btn-primary" [routerLink]="['/employee/edit',employee.id]">Update</button>
+          <button type="button" class="btn btn-info" [routerLink]="['/employee/info',employee.id]">Info</button>
+          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+            Delete
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+               aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Delete employee</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Are you sure delete: {{employee.nameEmployee}}
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="onDelete(employee.id)">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+      </tbody>
+    </table>
+  </div>
+</div>

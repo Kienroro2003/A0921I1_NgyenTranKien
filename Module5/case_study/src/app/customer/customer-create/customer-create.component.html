@@ -1,0 +1,69 @@
+<div class="container">
+  <form [formGroup]="customerGroup" (ngSubmit)="createCustomer()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Full name</label>
+      <input type="text" class="form-control" formControlName="name"  id="name" >
+      <p class="error" *ngIf="customerGroup.controls['name'].hasError('required') && (customerGroup.controls['name'].touched||customerGroup.controls['name'].dirty)">Bắt buộc</p>
+      <p class="error" *ngIf="customerGroup.controls['name'].hasError('minlength') && (customerGroup.controls['name'].touched||customerGroup.controls['name'].dirty)">Phải trên 6 kí tự</p>
+    </div>
+    <div class="mb-3">
+      <label for="code" class="form-label">Code</label>
+      <input type="text" class="form-control" formControlName="idCustomer" id="code" >
+      <p class="error" *ngIf="customerGroup.controls['idCustomer'].hasError('required') && (customerGroup.controls['idCustomer'].touched||customerGroup.controls['idCustomer'].dirty)">Bắt buộc</p>
+      <p class="error" *ngIf="customerGroup.controls['idCustomer'].hasError('pattern') && (customerGroup.controls['idCustomer'].touched||customerGroup.controls['idCustomer'].dirty)">Không đúng định dạng</p>
+    </div>
+    <div class="mb-3 w-50">
+      <label for="birthday" class="form-label">Birthday: </label>
+      <input type="date" id="birthday" class="form-control" formControlName="dateOfBirth">
+      <p class="error" *ngIf="customerGroup.controls['dateOfBirth'].hasError('required') && (customerGroup.controls['dateOfBirth'].touched||customerGroup.controls['dateOfBirth'].dirty)">Bắt buộc</p>
+      <p class="error" *ngIf="customerGroup.controls['dateOfBirth'].hasError('pattern') && (customerGroup.controls['dateOfBirth'].touched||customerGroup.controls['dateOfBirth'].dirty)">Không đúng định dạng</p>
+    </div>
+    <div class="form-check">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" formControlName="gender" [value]="true">
+        <label class="form-check-label" for="inlineRadio1">Male</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" formControlName="gender" [value]="false">
+        <label class="form-check-label" for="inlineRadio2">Female</label>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="idCard" class="form-label">Id card</label>
+      <input type="text" class="form-control" formControlName="idCard" id="idCard">
+      <p class="error" *ngIf="customerGroup.controls['idCard'].hasError('required') && (customerGroup.controls['idCard'].touched||customerGroup.controls['idCard'].dirty)">Bắt buộc</p>
+      <p class="error" *ngIf="customerGroup.controls['idCard'].hasError('pattern') && (customerGroup.controls['idCard'].touched||customerGroup.controls['idCard'].dirty)">Không đúng định dạng</p>
+    </div>
+    <!--  <%--                <div class="mb-3">--%>-->
+    <!--  <%--                    <label for="salary" class="form-label">Salary</label>--%>-->
+    <!--  <%--                    <input type="text" class="form-control" name="salary" id="salary" placeholder="Enter salary" value="${employee.getEmployeeSalary()}">--%>-->
+    <!--  <%--                    <span style="color: red;">${stringList[2]}</span>--%>-->
+    <!--  <%--                </div>--%>-->
+    <div class="mb-3">
+      <label for="phone" class="form-label">Phone number</label>
+      <input type="text" class="form-control" formControlName="phoneNumber" id="phone">
+      <p class="error" *ngIf="customerGroup.controls['phoneNumber'].hasError('required') && (customerGroup.controls['phoneNumber'].touched||customerGroup.controls['phoneNumber'].dirty)">Bắt buộc</p>
+      <p class="error" *ngIf="customerGroup.controls['phoneNumber'].hasError('pattern') && (customerGroup.controls['phoneNumber'].touched||customerGroup.controls['phoneNumber'].dirty)">Không đúng định dạng</p>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" formControlName="email" id="email">
+      <p class="error" *ngIf="customerGroup.controls['email'].hasError('required') && (customerGroup.controls['email'].touched||customerGroup.controls['email'].dirty)">Bắt buộc</p>
+      <p class="error" *ngIf="customerGroup.controls['email'].hasError('email') && (customerGroup.controls['email'].touched||customerGroup.controls['email'].dirty)">Không đúng định dạng</p>
+    </div>
+    <div class="mb-3">
+      <label for="address" class="form-label">Address</label>
+      <input type="text" class="form-control" formControlName="address" id="address">
+      <p class="error" *ngIf="customerGroup.controls['dateOfBirth'].hasError('pattern') && (customerGroup.controls['dateOfBirth'].touched||customerGroup.controls['dateOfBirth'].dirty)">Không đúng định dạng</p>
+    </div>
+    <div class="mb-3">
+        <label for="customerType" class="form-label">Customer type</label>
+        <select class="form-control form-select-lg mb-3" name="customerTypeId" id="customerType" formControlName="customerType">
+          <option selected>Open this select menu</option>
+          <option *ngFor="let customerType of customerTypes" [ngValue]="customerType">{{customerType.nameCustomerType}}</option>
+        </select>
+      <p class="error" *ngIf="customerGroup.controls['dateOfBirth'].hasError('required') && (customerGroup.controls['dateOfBirth'].touched||customerGroup.controls['dateOfBirth'].dirty)">Bắt buộc</p>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!customerGroup.valid">Submit</button>
+  </form>
+</div>

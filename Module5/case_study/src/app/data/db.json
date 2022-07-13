@@ -1,0 +1,171 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "idCustomer": "KH-0000",
+      "nameCustomer": "Nguyễn Trần Kiên",
+      "dateOfBirth": "2022-07-14",
+      "gender": true,
+      "idCard": "123123123",
+      "phoneNumber": "0901231231",
+      "email": "thuongmup123@gmail.com",
+      "customerType": {
+        "id": 1,
+        "nameCustomerType": "Diamond"
+      },
+      "address": "06"
+    }
+  ],
+  "customerTypes": [
+    {
+      "id": 1,
+      "nameCustomerType": "Diamond"
+    },
+    {
+      "id": 2,
+      "nameCustomerType": "Platinium"
+    },
+    {
+      "id": 3,
+      "nameCustomerType": "Gold"
+    },
+    {
+      "id": 4,
+      "nameCustomerType": "Silver"
+    },
+    {
+      "id": 5,
+      "nameCustomerType": "Member"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "idEmployee": "KH-0000",
+      "nameEmployee": "Nguyễn Trần Kiên",
+      "dateOfBirth": "2022-07-09",
+      "idCard": "123123123",
+      "phoneNumber": "0901231231",
+      "email": "kienroro281@gmail.com",
+      "position": {
+        "id": 1,
+        "name": "Lễ tân"
+      },
+      "level": {
+        "id": 1,
+        "name": "Trung cấp"
+      },
+      "department": {
+        "id": 2,
+        "name": "Hành chính"
+      },
+      "salary": 1000000000
+    },
+    {
+      "id": "2",
+      "idEmployee": "KH-0002",
+      "nameEmployee": "Nguyễn Trần Kiên",
+      "dateOfBirth": "2022-07-10",
+      "idCard": "123123123",
+      "phoneNumber": "0901231231",
+      "email": "addsda@gmail.com",
+      "position": {
+        "id": 1,
+        "name": "Lễ tân"
+      },
+      "level": {
+        "id": 1,
+        "name": "Trung cấp"
+      },
+      "department": {
+        "id": 1,
+        "name": "Sale - Marketing"
+      },
+      "salary": 10000000.5
+    },
+    {
+      "id": 3,
+      "idEmployee": "KH-0003",
+      "nameEmployee": "aaaaaaa",
+      "dateOfBirth": "2022-07-04",
+      "idCard": "123131231",
+      "phoneNumber": "0901231311",
+      "email": "kien@gmail.com",
+      "position": {
+        "id": 2,
+        "name": "Phục vụ"
+      },
+      "level": {
+        "id": 2,
+        "name": "Cao đẳng"
+      },
+      "department": {
+        "id": 1,
+        "name": "Sale - Marketing"
+      },
+      "salary": 1000000000
+    }
+  ],
+  "employeePositions": [
+    {
+      "id": 1,
+      "name": "Lễ tân"
+    },
+    {
+      "id": 2,
+      "name": "Phục vụ"
+    },
+    {
+      "id": 3,
+      "name": "Chuyên viên"
+    },
+    {
+      "id": 4,
+      "name": "Giám sát"
+    },
+    {
+      "id": 5,
+      "name": "Quản lý"
+    },
+    {
+      "id": 6,
+      "name": "Giám đốc"
+    }
+  ],
+  "employeeLevels": [
+    {
+      "id": 1,
+      "name": "Trung cấp"
+    },
+    {
+      "id": 2,
+      "name": "Cao đẳng"
+    },
+    {
+      "id": 3,
+      "name": "Đại học"
+    },
+    {
+      "id": 4,
+      "name": "Sau đại học"
+    }
+  ],
+  "employeeDepartments": [
+    {
+      "id": 1,
+      "name": "Sale - Marketing"
+    },
+    {
+      "id": 2,
+      "name": "Hành chính"
+    },
+    {
+      "id": 3,
+      "name": "Phục vụ"
+    },
+    {
+      "id": 4,
+      "name": "Quản lý"
+    }
+  ]
+}
