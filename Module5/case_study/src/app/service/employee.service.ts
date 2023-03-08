@@ -3,33 +3,35 @@ import {Observable} from "rxjs";
 import {Employee} from "../model/employee";
 import {HttpClient} from "@angular/common/http";
 
-const URL_API: string = "http://localhost:3000/employees";
-
 @Injectable({
   providedIn: 'root'
 })
 export class EmployeeService {
 
-  constructor(private httpClient: HttpClient) { }
+  private URL_API: string;
+
+  constructor(private httpClient: HttpClient) {
+    this.URL_API = 'http://localhost:8080/employee';
+  }
 
   getAll(): Observable<Employee[]>{
-    return this.httpClient.get<Employee[]>(URL_API);
+    return this.httpClient.get<Employee[]>(this.URL_API + "/list");
   }
 
   findById(id: number): Observable<Employee>{
-    return this.httpClient.get<Employee>(URL_API + "/" + id);
+    return this.httpClient.get<Employee>(this.URL_API + "/" + id);
   }
 
   addEmployee(customer: Employee): Observable<void>{
-    return this.httpClient.post<void>(URL_API, customer);
+    return this.httpClient.post<void>(this.URL_API + "/create", customer);
   }
 
   updateEmployee(id: number, customer:Employee): Observable<void>{
-    return this.httpClient.patch<void>(URL_API + "/" + id, customer);
+    return this.httpClient.patch<void>(this.URL_API + "/update?id=" + id, customer);
   }
 
   deleteEmployee(id: number): Observable<void>{
-    return this.httpClient.delete<void>(URL_API + "/" + id);
+    return this.httpClient.delete<void>(this.URL_API + "/" + id);
   }
 
   // sortField(field: number | string): Observable<void>{
@@ -37,10 +39,10 @@ export class EmployeeService {
   // }
   //
   findByName(name: string): Observable<Employee[]>{
-    return this.httpClient.get<Employee[]>(URL_API + "?nameEmployee_like="+name);
+    return this.httpClient.get<Employee[]>(this.URL_API + "?nameEmployee_like="+name);
   }
 
   searchPlural(name: string, email: string):Observable<Employee[]>{
-    return this.httpClient.get<Employee[]>(URL_API + "?nameEmployee_like="+ name +"&email_like="+email);
+    return this.httpClient.get<Employee[]>(this.URL_API + "?nameEmployee_like="+ name +"&email_like="+email);
   }
 }

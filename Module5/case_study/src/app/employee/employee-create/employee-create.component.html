@@ -2,89 +2,69 @@
   <form [formGroup]="employeeGroup" (ngSubmit)="createEmployee()">
     <div class="mb-3">
       <label for="name" class="form-label">Full name</label>
-      <input type="text" class="form-control" formControlName="nameEmployee" id="name" >
-      <p class="error" *ngIf="employeeGroup.controls['nameEmployee'].hasError('required') && (employeeGroup.controls['nameEmployee'].touched||employeeGroup.controls['nameEmployee'].dirty)">Bắt buộc</p>
-      <p class="error" *ngIf="employeeGroup.controls['nameEmployee'].hasError('minlength') && (employeeGroup.controls['nameEmployee'].touched||employeeGroup.controls['nameEmployee'].dirty)">Phải trên 6 kí tự</p>
-    </div>
-    <div class="mb-3">
-      <label for="code" class="form-label">Code</label>
-      <input type="text" class="form-control" formControlName="idEmployee" id="code" >
-      <p class="error" *ngIf="employeeGroup.controls['idEmployee'].hasError('required') && (employeeGroup.controls['idEmployee'].touched||employeeGroup.controls['idEmployee'].dirty)">Bắt buộc</p>
-      <p class="error" *ngIf="employeeGroup.controls['idEmployee'].hasError('pattern') && (employeeGroup.controls['idEmployee'].touched||employeeGroup.controls['idEmployee'].dirty)">Không đúng định dạng</p>
+      <input type="text" class="form-control" formControlName="employeeName" id="name" >
+<!--      <p class="error" *ngIf="employeeGroup.controls['employeeName'].hasError('required') && (employeeGroup.controls['employeeName'].touched||employeeGroup.controls['employeeName'].dirty)">Bắt buộc</p>-->
+<!--      <p class="error" *ngIf="employeeGroup.controls['employeeName'].hasError('minlength') && (employeeGroup.controls['employeeName'].touched||employeeGroup.controls['employeeName'].dirty)">Phải trên 6 kí tự</p>-->
     </div>
     <div class="mb-3 w-50">
       <label for="birthday" class="form-label">Birthday: </label>
-      <input type="date" id="birthday" class="form-control" formControlName="dateOfBirth">
-      <p class="error" *ngIf="employeeGroup.controls['dateOfBirth'].hasError('required') && (employeeGroup.controls['dateOfBirth'].touched||employeeGroup.controls['dateOfBirth'].dirty)">Bắt buộc</p>
-      <p class="error" *ngIf="employeeGroup.controls['dateOfBirth'].hasError('pattern') && (employeeGroup.controls['dateOfBirth'].touched||employeeGroup.controls['dateOfBirth'].dirty)">Không đúng định dạng</p>
+      <input type="date" id="birthday" class="form-control" formControlName="employeeBirthday">
+      <p class="error" *ngIf="employeeGroup.controls['employeeBirthday'].hasError('required') && (employeeGroup.controls['employeeBirthday'].touched||employeeGroup.controls['employeeBirthday'].dirty)">Bắt buộc</p>
+      <p class="error" *ngIf="employeeGroup.controls['employeeBirthday'].hasError('pattern') && (employeeGroup.controls['employeeBirthday'].touched||employeeGroup.controls['employeeBirthday'].dirty)">Không đúng định dạng</p>
     </div>
-<!--    <div class="form-check">-->
-<!--      <div class="form-check form-check-inline">-->
-<!--        <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" formControlName="gender" [value]="true">-->
-<!--        <label class="form-check-label" for="inlineRadio1">Male</label>-->
-<!--      </div>-->
-<!--      <div class="form-check form-check-inline">-->
-<!--        <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" formControlName="gender" [value]="false">-->
-<!--        <label class="form-check-label" for="inlineRadio2">Female</label>-->
-<!--      </div>-->
-<!--    </div>-->
     <div class="mb-3">
-      <label for="idCard" class="form-label">Id card</label>
-      <input type="text" class="form-control" formControlName="idCard" id="idCard">
-      <p class="error" *ngIf="employeeGroup.controls['idCard'].hasError('required') && (employeeGroup.controls['idCard'].touched||employeeGroup.controls['idCard'].dirty)">Bắt buộc</p>
-      <p class="error" *ngIf="employeeGroup.controls['idCard'].hasError('pattern') && (employeeGroup.controls['idCard'].touched||employeeGroup.controls['idCard'].dirty)">Không đúng định dạng</p>
+      <label for="employeeIdCard" class="form-label">Id card</label>
+      <input type="text" class="form-control" formControlName="employeeIdCard" id="employeeIdCard">
+      <p class="error" *ngIf="employeeGroup.controls['employeeIdCard'].hasError('required') && (employeeGroup.controls['employeeIdCard'].touched||employeeGroup.controls['employeeIdCard'].dirty)">Bắt buộc</p>
+      <p class="error" *ngIf="employeeGroup.controls['employeeIdCard'].hasError('pattern') && (employeeGroup.controls['employeeIdCard'].touched||employeeGroup.controls['employeeIdCard'].dirty)">Không đúng định dạng</p>
     </div>
-    <!--  <%--                <div class="mb-3">--%>-->
-    <!--  <%--                    <label for="salary" class="form-label">Salary</label>--%>-->
-    <!--  <%--                    <input type="text" class="form-control" name="salary" id="salary" placeholder="Enter salary" value="${employee.getEmployeeSalary()}">--%>-->
-    <!--  <%--                    <span style="color: red;">${stringList[2]}</span>--%>-->
-    <!--  <%--                </div>--%>-->
     <div class="mb-3">
       <label for="phone" class="form-label">Phone number</label>
-      <input type="text" class="form-control" formControlName="phoneNumber" id="phone">
-      <p class="error" *ngIf="employeeGroup.controls['phoneNumber'].hasError('required') && (employeeGroup.controls['phoneNumber'].touched||employeeGroup.controls['phoneNumber'].dirty)">Bắt buộc</p>
-      <p class="error" *ngIf="employeeGroup.controls['phoneNumber'].hasError('pattern') && (employeeGroup.controls['phoneNumber'].touched||employeeGroup.controls['phoneNumber'].dirty)">Không đúng định dạng</p>
+      <input type="text" class="form-control" formControlName="employeePhone" id="phone">
+      <p class="error" *ngIf="employeeGroup.controls['employeePhone'].hasError('required') && (employeeGroup.controls['employeePhone'].touched||employeeGroup.controls['employeePhone'].dirty)">Bắt buộc</p>
+      <p class="error" *ngIf="employeeGroup.controls['employeePhone'].hasError('pattern') && (employeeGroup.controls['employeePhone'].touched||employeeGroup.controls['employeePhone'].dirty)">Không đúng định dạng</p>
     </div>
     <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="form-control" formControlName="email" id="email">
-      <p class="error" *ngIf="employeeGroup.controls['email'].hasError('required') && (employeeGroup.controls['email'].touched||employeeGroup.controls['email'].dirty)">Bắt buộc</p>
-      <p class="error" *ngIf="employeeGroup.controls['email'].hasError('email') && (employeeGroup.controls['email'].touched||employeeGroup.controls['email'].dirty)">Không đúng định dạng</p>
+      <label for="employeeEmail" class="form-label">Email</label>
+      <input type="employeeEmail" class="form-control" formControlName="employeeEmail" id="employeeEmail">
+      <p class="error" *ngIf="employeeGroup.controls['employeeEmail'].hasError('required') && (employeeGroup.controls['employeeEmail'].touched||employeeGroup.controls['employeeEmail'].dirty)">Bắt buộc</p>
+      <p class="error" *ngIf="employeeGroup.controls['employeeEmail'].hasError('employeeEmail') && (employeeGroup.controls['employeeEmail'].touched||employeeGroup.controls['employeeEmail'].dirty)">Không đúng định dạng</p>
     </div>
-<!--    <div class="mb-3">-->
-<!--      <label for="address" class="form-label">Address</label>-->
-<!--      <input type="text" class="form-control" formControlName="address" id="address">-->
-<!--      <p class="error" *ngIf="employeeGroup.controls['dateOfBirth'].hasError('pattern') && (employeeGroup.controls['dateOfBirth'].touched||employeeGroup.controls['dateOfBirth'].dirty)">Không đúng định dạng</p>-->
-<!--    </div>-->
+    <div class="mb-3">
+      <label for="employeeAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" formControlName="employeeAddress" id="employeeAddress">
+      <p class="error" *ngIf="employeeGroup.controls['employeeAddress'].hasError('required') && (employeeGroup.controls['employeeAddress'].touched||employeeGroup.controls['employeeAddress'].dirty)">Bắt buộc</p>
+      <p class="error" *ngIf="employeeGroup.controls['employeeAddress'].hasError('minlength') && (employeeGroup.controls['employeeAddress'].touched||employeeGroup.controls['employeeAddress'].dirty)">Phải trên 6 kí tự</p>
+    </div>
     <div class="mb-3">
       <label for="position" class="form-label">Employee position</label>
       <select class="form-control form-select-lg mb-3" id="position" formControlName="position">
-        <option selected>Open this select menu</option>
-        <option *ngFor="let position of employeePositions" [ngValue]="position">{{position.name}}</option>
+        <option>Open this select menu</option>
+        <option *ngFor="let position of positions" [ngValue]="position">{{position.positionName}}</option>
       </select>
       <p class="error" *ngIf="employeeGroup.controls['position'].hasError('required') && (employeeGroup.controls['position'].touched||employeeGroup.controls['position'].dirty)">Bắt buộc</p>
     </div>
     <div class="mb-3">
-      <label for="level" class="form-label">Employee level</label>
-      <select class="form-control form-select-lg mb-3"  id="level" formControlName="level">
-        <option selected>Open this select menu</option>
-        <option *ngFor="let level of employeeLevels" [ngValue]="level">{{level.name}}</option>
+      <label for="educationDegree" class="form-label">Education degree</label>
+      <select class="form-control form-select-lg mb-3" id="educationDegree" formControlName="educationDegree">
+        <option>Open this select menu</option>
+        <option *ngFor="let educationDegree of educationDegrees" [ngValue]="educationDegree">{{educationDegree.educationDegreeName}}</option>
       </select>
-      <p class="error" *ngIf="employeeGroup.controls['level'].hasError('required') && (employeeGroup.controls['level'].touched||employeeGroup.controls['level'].dirty)">Bắt buộc</p>
+      <p class="error" *ngIf="employeeGroup.controls['educationDegree'].hasError('required') && (employeeGroup.controls['educationDegree'].touched||employeeGroup.controls['educationDegree'].dirty)">Bắt buộc</p>
     </div>
     <div class="mb-3">
-      <label for="department" class="form-label">Employee department</label>
-      <select class="form-control form-select-lg mb-3" id="department" formControlName="department">
-        <option selected>Open this select menu</option>
-        <option *ngFor="let department of employeeDepartments" [ngValue]="department">{{department.name}}</option>
+      <label for="division" class="form-label">Employee division</label>
+      <select class="form-control form-select-lg mb-3" id="division" formControlName="division">
+        <option>Open this select menu</option>
+        <option *ngFor="let division of divisions" [ngValue]="division">{{division.divisionName}}</option>
       </select>
-      <p class="error" *ngIf="employeeGroup.controls['department'].hasError('required') && (employeeGroup.controls['department'].touched||employeeGroup.controls['department'].dirty)">Bắt buộc</p>
+      <p class="error" *ngIf="employeeGroup.controls['division'].hasError('required') && (employeeGroup.controls['division'].touched||employeeGroup.controls['division'].dirty)">Bắt buộc</p>
     </div>
     <div class="mb-3">
-      <label for="salary" class="form-label">Salary</label>
-      <input type="number" class="form-control" formControlName="salary" id="salary">
-      <p class="error" *ngIf="employeeGroup.controls['salary'].hasError('required') && (employeeGroup.controls['salary'].touched||employeeGroup.controls['salary'].dirty)">Bắt buộc</p>
-      <p class="error" *ngIf="employeeGroup.controls['salary'].hasError('gte') && (employeeGroup.controls['salary'].touched||employeeGroup.controls['salary'].dirty)">nguyen duong</p>
+      <label for="employeeSalary" class="form-label">Salary</label>
+      <input type="number" class="form-control" formControlName="employeeSalary" id="employeeSalary">
+      <p class="error" *ngIf="employeeGroup.controls['employeeSalary'].hasError('required') && (employeeGroup.controls['employeeSalary'].touched||employeeGroup.controls['employeeSalary'].dirty)">Bắt buộc</p>
+      <p class="error" *ngIf="employeeGroup.controls['employeeSalary'].hasError('gte') && (employeeGroup.controls['employeeSalary'].touched||employeeGroup.controls['employeeSalary'].dirty)">nguyen duong</p>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>

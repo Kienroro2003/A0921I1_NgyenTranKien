@@ -1,7 +1,6 @@
 package common;
 
 public class Validation {
-
     public static boolean checkName(String name) {
         String regex = "^[a-zA-Z ]{3,45}$";
         return name.matches(regex);

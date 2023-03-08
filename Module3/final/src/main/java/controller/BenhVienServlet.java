@@ -4,9 +4,7 @@ import model.bean.BenhVien;
 import model.service.BenhVienService;
 import model.service.Impl.BenhVienServiceImpl;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+
 import java.io.IOException;
 import java.sql.PreparedStatement;
 import java.util.List;

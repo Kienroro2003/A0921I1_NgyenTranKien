@@ -1,0 +1,72 @@
+{
+  "parents": [
+    {
+      "id": 1,
+      "name": "chanh",
+      "group": "Nhóm 4",
+      "teacher": {
+        "id": 3,
+        "name": "Le Van Luyen"
+      },
+      "content": "Caption Marvel Vs Scarlet Witch",
+      "email": "kien281@def.com",
+      "phoneNumber": "0901231311"
+    },
+    {
+      "id": 2,
+      "name": "kienroro281",
+      "group": "Nhóm 1",
+      "teacher": {
+        "id": 2,
+        "name": "Hong Ngoc Hanh"
+      },
+      "content": "the philosopher's stone",
+      "email": "kien@def.com",
+      "phoneNumber": "0337468208"
+    },
+    {
+      "id": 3,
+      "name": "kien",
+      "group": "Nhóm 3",
+      "teacher": {
+        "id": 1,
+        "name": "Mai Thi Lan"
+      },
+      "content": "harry vs voldemort",
+      "email": "kien@def.com",
+      "phoneNumber": "0337468208"
+    },
+    {
+      "id": 4,
+      "name": "",
+      "group": "",
+      "teacher": "",
+      "content": "",
+      "email": "",
+      "phoneNumber": ""
+    },
+    {
+      "id": 5,
+      "name": "",
+      "group": "",
+      "teacher": "",
+      "content": "",
+      "email": "",
+      "phoneNumber": ""
+    }
+  ],
+  "children": [
+    {
+      "id": 1,
+      "name": "Mai Thi Lan"
+    },
+    {
+      "id": 2,
+      "name": "Hong Ngoc Hanh"
+    },
+    {
+      "id": 3,
+      "name": "Le Van Luyen"
+    }
+  ]
+}

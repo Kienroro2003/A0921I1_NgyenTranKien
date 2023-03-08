@@ -1,0 +1,131 @@
+body {
+  font: 12px "Arial", Arial, Helvetica, sans-serif;
+  background-image: url("/assert/images/bg_pattern.jpg");
+  color: #333;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page .header {
+  background-image: url(/assert/images/headerbg.png);
+  width: 100%;
+  height: 150px;
+}
+
+.page .header .topbar{
+    background:rgba(216,216,216,.6);
+    height: 22px;
+}
+
+.page .header ul li {
+  display: inline-block;
+}
+
+.page .header ul.topnav {
+  float: left;
+  width: 400px;
+  text-align: left;
+  margin: 0;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+.clearfix::before {
+  content: " ";
+  display: table;
+}
+
+.page .header ul.topprofile {
+  float: right;
+  width: 600px;
+  text-align: right;
+  margin: 0;
+}
+
+.page .header ul li a {
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color:#016600;
+}
+
+.page .header ul li:hover a{
+    text-decoration: underline;
+}
+
+.page .header ul li:nth-child(n+2) a::before{
+    content: "|";
+    padding:0 15px;
+}
+
+.header .wrap{
+    position:relative;
+    height: 150px;
+    width:1000px;
+}
+
+.header .wrap .logo{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    width: 514px;
+    height: 90px;
+    margin:0;
+}
+
+.header .wrap h1.logo a{
+    background-image: url(/assert/images/logo.png);
+    width: 514px;
+    height: 90px;
+    display: block;
+    text-indent: -500rem;
+}
+
+.header .wrap .card{
+    position:absolute;
+    top:20px;
+    right: 0;
+    height: 55px;
+    width: 55px;
+    background-image: url(/assert/images/cart.png);
+}
+
+.header .wrap .search{
+    position:absolute;
+    top: 90px;
+    right: 0;
+    border: 1px solid #ccc;
+    height: 28px;
+    background: none repeat scroll 0 0 #fff;
+}
+
+.header .wrap .search .text{
+    background: none repeat scroll 0 0 #fff;
+    border: medium none;
+    color: #333;
+    float: left;
+    margin: 6px 0 0 8px;
+    padding: 2px;
+    width: 300px;
+}
+
+.header .wrap .search .text::placeholder{
+    color:#016600;
+    font-style: ;
+}

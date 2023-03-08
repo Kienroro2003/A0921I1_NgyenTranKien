@@ -1,10 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {EmployeePosition} from "../../model/employee-position";
-import {EmployeeLevel} from "../../model/employee-level";
-import {EmployeeDepartment} from "../../model/employee-department";
-import {EmployeePositionService} from "../../service/employee-position.service";
-import {EmployeeLevelService} from "../../service/employee-level.service";
-import {EmployeeDepartmentService} from "../../service/employee-department.service";
 import {EmployeeService} from "../../service/employee.service";
 import {Employee} from "../../model/employee";
 import {Router} from "@angular/router";

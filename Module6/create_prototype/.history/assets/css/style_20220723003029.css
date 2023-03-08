@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --bg-ticket: #f1f1f1;
+  --color-secondary: #43464b;
+  --color-primary: #f26b38;
+}
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.container {
+  margin: 20px 0px;
+}
+
+.sidebar {
+  line-height: 16px;
+  padding: 0 15px;
+}
+.ticket {
+  background-color: var(--bg-ticket);
+  min-height: 500px;
+}
+.ticket--header {
+}
+.ticket--detail {
+}
+.ticket--detail__title {
+}
+.ticket--detail__icon {
+}
+.ticket--detail__info {
+}
+.ticket--detail__price-total {
+}
+.ticket--detail__button {
+}

@@ -1,0 +1,123 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.page .container .bookdetailwrap {
+  background: url(/assert/images/headerbg.png);
+  width: 940px;
+  margin: 10px auto;
+  padding: 30px;
+  min-height: 400px;
+  box-shadow: 0 0 4px #444;
+}
+
+.page .container .bookdetailwrap .bookdetail {
+  /* display: inline-block; */
+  float: left;
+}
+
+.page .container .bookdetailwrap .bookdetail .image{
+    float: left;
+    height: 342px;
+    position: relative;
+    width: 318px;
+    position: relative;
+    text-align: center;
+}
+
+.page .container .bookdetailwrap .bookdetail .image img{
+    max-height: 320px;
+    max-width: 320px;
+    border: 1px solid #ccc;
+  
+}
+
+.page .container .bookdetailwrap .info{
+    margin-left: 366px;
+}
+
+.page .container .bookdetailwrap .info h1{
+    margin:0;
+}
+
+.page .container .bookdetailwrap .info h1{
+    border-bottom: 4px solid #cacbcc;
+    line-height: 0;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.page .container .bookdetailwrap .info h1 a{
+    font-size: 16px;
+    color:#015e00;
+    line-height: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.page .container .bookdetail .info .intro .attributes{
+    float: left;
+    width: 245px;
+}
+
+.page .container .bookdetail .info .intro .attributes li{
+    border-bottom: 1px solid #999;
+    color: #333;
+    line-height: 20px;
+    padding: 5px 0;
+}
+
+.page .container .bookdetail .info .intro .attributes li::before{
+    content: "•";
+    padding-right: 5px;
+}
+
+.page .container .bookdetail .info .intro .attributes li a{
+    font-weight: bold;
+    color:#333;
+    text-decoration: none;
+}
+
+.page .container .bookdetail .info .intro .attributes li a:hover{
+    text-decoration:underline;
+}
+
+.page .container .bookdetail .info .intro .action{
+    margin-left: 315px;
+    position: relative;
+}
+
+.page .container .bookdetail .info .intro .action .price .oldprice{
+    background: #808081;
+    font-size: 12px;
+    padding: 5px;
+    color:#fff;
+    margin-bottom:5px;
+}
+
+.page .container .bookdetail .info .intro .action .price .newprice{
+    margin-bottom: 5px;
+    background: #0f5731;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 5px;
+}
+
+.page .container .bookdetail .info .intro .action .price .newprice span{
+    padding-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.page .container .bookdetail .info .intro .action .quantitytext{
+    font-size: 11px;
+    margin-top: 27px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic tac toe</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+      }
+      body {
+        line-height: 1.5;
+      }
+      img,
+      picture,
+      video,
+      canvas,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+      input,
+      button,
+      textarea,
+      select {
+        outline: none;
+      }
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        overflow-wrap: break-word;
+      }
+      table {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        border-spacing: 0;
+        border: 5px solid #eee;
+        margin-bottom: 20px;
+      }
+      td {
+        width: 100px;
+        height: 100px;
+        border: 5px solid #eee;
+        margin: 0;
+      }
+      .red {
+        color: red;
+        position: relative;
+      }
+      .red::after {
+        content: "";
+        position: absolute;
+        border: 5px solid transparent;
+        border-right-color: currentColor;
+        border-bottom-color: currentColor;
+        width: 50%;
+        height: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -115.71%) rotate(45deg);
+        z-index: 100;
+      }
+      .red::before {
+        content: "";
+        position: absolute;
+        border: 5px solid transparent;
+        border-top-color: currentColor;
+        border-left-color: currentColor;
+        width: 50%;
+        height: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 7.21%) rotate(45deg);
+      }
+      .blue {
+        position: relative;
+        color: blue;
+      }
+
+      .blue::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: currentColor;
+        opacity: 0.2;
+      }
+
+      .blue::before {
+        content: "";
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 5px solid blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .turn {
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        color: tomato;
+      }
+      .wrapper {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .reset {
+        padding: 10px 30px;
+        color: white;
+        background-color: tomato;
+        display: inline-block;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="turn">Tic tac toe</h1>
+    <table>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <div class="wrapper">
+      <div class="reset">Reset</div>
+    </div>
+    <script>
+      const td = document.querySelectorAll("td");
+      let checkTurn = true;
+      const player1 = "Người chơi thứ nhất";
+      const player2 = "Người chơi thứ hai";
+      const turn = document.querySelector(".turn");
+      console.log(td);
+      td.forEach((item) => {
+        item.addEventListener("click", function (e) {
+          if (!(e.target.matches(".red") || e.target.matches(".blue"))) {
+            if (checkTurn) {
+              e.target.classList.add("red");
+              e.target.classList.add("bg-red");
+              turn.textContent = player2;
+              turn.style.color = "blue";
+              checkTurn = false;
+            } else {
+              checkTurn = true;
+              e.target.classList.add("blue");
+              turn.textContent = player1;
+              turn.style.color = "red";
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

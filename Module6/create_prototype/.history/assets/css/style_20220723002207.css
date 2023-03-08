@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --bg-ticket: #f1f1f1;
+  --color-ticket: $43
+}
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+

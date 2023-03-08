@@ -1,17 +1,18 @@
-import {EmployeePosition} from "./employee-position";
-import {EmployeeLevel} from "./employee-level";
-import {EmployeeDepartment} from "./employee-department";
+import {Position} from "./position";
+import {EducationDegree} from "./education-degree";
+import {Division} from "./division";
 
 export interface Employee {
   id: number,
-  idEmployee: string,
-  nameEmployee: string,
-  dateOfBirth: Date,
-  idCard: string,
-  phoneNumber: string,
-  email: string,
-  position: EmployeePosition,
-  level: EmployeeLevel,
-  department: EmployeeDepartment,
-  salary: number
+  employeeName: string,
+  employeeBirthday: Date,
+  employeeIdCard: string,
+  employeePhone: string,
+  employeeEmail: string,
+  employeeAddress: string,
+  employeeSalary: number,
+  position: Position,
+  educationDegree: EducationDegree,
+  division: Division,
+
 }

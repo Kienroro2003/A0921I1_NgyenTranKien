@@ -33,7 +33,7 @@ public class CustomerController {
     }
 //---------------------list---------------------
     @GetMapping("/list")
-    public String getViewListCustomer(@CookieValue("hello") Model model,
+    public String getViewListCustomer(@CookieValue("helloz") Model model,
                                       @RequestParam(value = "name", required = false, defaultValue = "") String name,
                                       @PageableDefault(size = 5)Pageable pageable){
         model.addAttribute("customers", customerService.getList(name,pageable));

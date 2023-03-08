@@ -1,0 +1,7 @@
+.page .container .bookdetailwrap{
+    background: url(/assert/images/headerbg.png);
+    width:940px;
+    margin:10px auto;
+    padding:30px;
+    min-height: 400px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Bài 6</title>
+    <style>
+        body {
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h2>Tym Tym</h2>
+<script>
+    let temp1 = 5;
+    for (let i = 0; i < 3; i++) {
+        for (let k = 0; k < temp1; k++) {
+            if (i === 0 && k === 2) {
+                document.write(" ");
+                continue;
+            }
+            document.write("*");
+        }
+        temp1 += 2;
+        document.write("<br>");
+    }
+    let temp = 9;
+    for (let i = 0; i < 5; i++) {
+        for (let j = temp; j > 0; j--) {
+            document.write("*");
+        }
+        temp -= 2;
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    ​
+    <style>
+        h1{
+            background-color: green;;
+        }
+        .tieu-de{
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="mycss.css">
+</head>
+<body>
+<h1 class="tieu-de"> Thông tin học viên</h1>
+<!--<h1> Không class</h1>-->
+<!--<h2> Thông tin học viên</h2>-->
+<form action="#" method="get">
+    <label for="">Name</label> 
+    <input type="text" name="name"><br>
+    <label for="">Birthday</label> <input type="date" name="birthday"><br>
+    <label for="">Email</label> <input type="text" name="email"><br>
+    <label for="">Pass</label> <input type="password" name="password"><br>
+    <label for=""></label> <input type="radio" name="gender" value="true">Nam
+    <input type="radio" name="gender" value="false"> Nữ<br>
+    Sở thích <input type="checkbox" name="hobby" value="sport"> Sport<br>
+    <input type="checkbox" name="hobby" value="game"> Game<br>
+    <input type="checkbox" name="hobby" value="shopping"> shopping<br>
+    <select name="province">
+        <option value=""> Chon tỉnh/thành phố</option>
+        <option value="DN"> Đà Nẵng</option>
+        <option value="QN"> Quảng Nam</option>
+        <option value="Hue"> Huế </option>
+    </select><br>
+    <button type="submit"> Gửi</button>
+    <button type="button"> Click</button>
+    <button type="reset"> Xoá</button>
+</form>
+<br>
+<table border="1" style="border-collapse: collapse">
+    <tr>
+        <th>STT</th>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Chánh</td>
+        <td>37</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Hải</td>
+        <td>25</td>
+    </tr>
+</table>
+​
+<table border="1" style="border-collapse: collapse">
+    <tr style="background-color: yellow; color: red">
+        <th rowspan="2">STT</th>
+        <th rowspan="2">Môn học</th>
+        <th colspan="2">Số tiết</th>
+    </tr>
+    <tr>
+        <th>Thực hành</th>
+        <th>Lý thuyết</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>JS</td>
+        <td>7</td>
+        <td>4</td>
+    </tr>
+</table>
+</body>
+</html>

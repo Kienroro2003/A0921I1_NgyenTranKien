@@ -1,0 +1,59 @@
+<div class="container">
+  <table class="table">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Tên sinh viên</th>
+      <th scope="col">Tên nhóm</th>
+      <th scope="col">Tên đề tài</th>
+      <th scope="col">Giáo viên hướng dẫn</th>
+      <th scope="col">Email</th>
+      <th scope="col">Số điện thoai</th>
+      <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let parent of parents | paginate: { itemsPerPage: 5, currentPage: page }; index as i">
+      <td>{{i + 1}}</td>
+      <td>{{parent.name}}</td>
+      <td>{{parent.group}}</td>
+      <td>{{parent.content}}</td>
+      <td>{{parent.teacher.name}}</td>
+      <td>{{parent.email}}</td>
+      <td>{{parent.phoneNumber}}</td>
+      <td>
+        <button type="button" class="btn btn-primary" [routerLink]="['edit', parent.id]">Update</button>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+          Delete
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Are you sure: {{parent.name}}
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="getDelete(parent.id)">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <pagination-controls (pageChange)="page = $event"></pagination-controls>
+</div>

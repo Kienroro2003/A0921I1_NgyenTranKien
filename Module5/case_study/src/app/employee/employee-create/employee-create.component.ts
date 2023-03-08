@@ -1,15 +1,16 @@
 import {Component, OnInit} from '@angular/core';
-import {EmployeePositionService} from "../../service/employee-position.service";
-import {EmployeeLevelService} from "../../service/employee-level.service";
-import {EmployeeDepartmentService} from "../../service/employee-department.service";
 import {Router} from "@angular/router";
-import {EmployeePosition} from "../../model/employee-position";
-import {EmployeeLevel} from "../../model/employee-level";
-import {EmployeeDepartment} from "../../model/employee-department";
+
 import {EmployeeService} from "../../service/employee.service";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {Employee} from "../../model/employee";
 import {gte} from "../../dto/gte.validator";
+import {PositionService} from "../../service/position.service";
+import {EducationDegree} from "../../model/education-degree";
+import {EducationDegreeService} from "../../service/education-degree.service";
+import {DivisionService} from "../../service/division.service";
+import {Position} from "../../model/position";
+import {Division} from "../../model/division";
 
 @Component({
   selector: 'app-employee-create',
@@ -21,52 +22,54 @@ export class EmployeeCreateComponent implements OnInit {
   // @ts-ignore
   employeeGroup: FormGroup;
 
-  employeePositions: EmployeePosition[] = [];
+  positions: Position[] = [];
 
-  employeeLevels: EmployeeLevel[] = [];
+  educationDegrees: EducationDegree[] = [];
 
-  employeeDepartments: EmployeeDepartment[] = [];
+  divisions: Division[] = [];
 
   constructor(
-    private employeePositionService: EmployeePositionService,
-    private employeeLevelService: EmployeeLevelService,
-    private employeeDepartmentService: EmployeeDepartmentService,
+    private positionService: PositionService,
+    private educationDegreeService: EducationDegreeService,
+    private divisionService: DivisionService,
     private employeeService: EmployeeService,
     private router: Router
   ) {
     this.employeeService.getAll().subscribe(next=>{
       this.employeeGroup = new FormGroup({
         id: new FormControl(next.length+1),
-        idEmployee: new FormControl("", [Validators.required, Validators.pattern("^KH\\-[0-9]{4}$")]),
-        nameEmployee: new FormControl("", [Validators.required, Validators.minLength(6)]),
-        dateOfBirth: new FormControl("", [Validators.required, Validators.pattern("\\d{4}-\\d{2}-\\d{2}")]),
-        idCard: new FormControl("", [Validators.required, Validators.pattern("^([0-9]{9}|[0-9]{12})$")]),
-        phoneNumber: new FormControl("", [Validators.required, Validators.pattern("^(09[01][0-9]{7}|\\(84\\)\\+9[01][0-9]{7})$")]),
-        email: new FormControl("", [Validators.required, Validators.email]),
+        employeeName: new FormControl("", [Validators.required, Validators.minLength(6)]),
+        employeeBirthday: new FormControl("", [Validators.required, Validators.pattern("\\d{4}-\\d{2}-\\d{2}")]),
+        employeeIdCard: new FormControl("", [Validators.required, Validators.pattern("^([0-9]{9}|[0-9]{12})$")]),
+        employeePhone: new FormControl("", [Validators.required, Validators.pattern("^(09[01][0-9]{7}|\\(84\\)\\+9[01][0-9]{7})$")]),
+        employeeEmail: new FormControl("", [Validators.required, Validators.email]),
+        employeeAddress: new FormControl("", [Validators.required, Validators.minLength(6)]),
         position: new FormControl("", Validators.required),
-        level: new FormControl("", Validators.required),
-        department: new FormControl("", Validators.required),
-        salary: new FormControl("",[Validators.required,gte])
+        educationDegree: new FormControl("", Validators.required),
+        division: new FormControl("", Validators.required),
+        employeeSalary: new FormControl("",[Validators.required,gte])
       })
     })
   }
 
   getAllPosition() {
-    this.employeePositionService.getAll().subscribe(next => {
+    this.positionService.getAll().subscribe(next => {
       console.log(next)
-      this.employeePositions = next
+      this.positions = next
     })
   }
 
   getAllLevel() {
-    this.employeeLevelService.getAll().subscribe(next => {
-      this.employeeLevels = next;
+    this.educationDegreeService.getAll().subscribe(next => {
+      console.log(next)
+      this.educationDegrees = next;
     })
   }
 
   getAllDepartment() {
-    this.employeeDepartmentService.getAll().subscribe(next => {
-      this.employeeDepartments = next;
+    this.divisionService.getAll().subscribe(next => {
+      console.log(next)
+      this.divisions = next;
     })
   }
 

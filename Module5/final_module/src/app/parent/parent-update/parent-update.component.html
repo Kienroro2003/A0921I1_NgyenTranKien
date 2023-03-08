@@ -1,0 +1,45 @@
+<div class="container">
+  <form [formGroup]="parentForm" (ngSubmit)="updateParent()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" formControlName="name" id="name" >
+      <p *ngIf="parentForm.controls['name'].hasError('required') && (parentForm.controls['name'].touched||parentForm.controls['name'].dirty)">Bắc buộc</p>
+      <p *ngIf="parentForm.controls['name'].hasError('pattern') && (parentForm.controls['name'].touched||parentForm.controls['name'].dirty)">Không đúng định dạng</p>
+    </div>
+    <div class="mb-3 w-50">
+      <label for="content" class="form-label">Tên đề tài</label>
+      <input type="text" id="content" class="form-control"  formControlName="content">
+      <p *ngIf="parentForm.controls['content'].hasError('required') && (parentForm.controls['content'].touched||parentForm.controls['content'].dirty)">Bắc buộc</p>
+      <p *ngIf="parentForm.controls['content'].hasError('pattern') && (parentForm.controls['content'].touched||parentForm.controls['content'].dirty)">Phải dài hơn 6 kí tự</p>
+    </div>
+    <div class="mb-3 w-50">
+      <label for="group" class="form-label">Tên nhóm </label>
+      <input type="text" id="group" class="form-control"  formControlName="group">
+      <p *ngIf="parentForm.controls['group'].hasError('required') && (parentForm.controls['group'].touched||parentForm.controls['group'].dirty)">Bắc buộc</p>
+      <p *ngIf="parentForm.controls['group'].hasError('pattern') && (parentForm.controls['group'].touched||parentForm.controls['group'].dirty)">Không đúng định dạng</p>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">email</label>
+      <input type="text" class="form-control" formControlName="email" id="email">
+      <p *ngIf="parentForm.controls['email'].hasError('required') && (parentForm.controls['email'].touched||parentForm.controls['email'].dirty)">Bắc buộc</p>
+      <p *ngIf="parentForm.controls['email'].hasError('pattern') && (parentForm.controls['email'].touched||parentForm.controls['email'].dirty)">Không đúng định dạng email</p>
+    </div>
+    <div class="mb-3">
+      <label for="phone" class="form-label">Số điện thoại</label>
+      <input type="text" class="form-control" formControlName="phoneNumber" id="phone" >
+      <p *ngIf="parentForm.controls['phoneNumber'].hasError('required') && (parentForm.controls['phoneNumber'].touched||parentForm.controls['phoneNumber'].dirty)">Bắc buộc</p>
+      <p *ngIf="parentForm.controls['phoneNumber'].hasError('pattern') && (parentForm.controls['phoneNumber'].touched||parentForm.controls['phoneNumber'].dirty)">Không đúng định dạngdạng
+    </div>
+    <div class="mb-3">
+      <label for="teacher" class="form-label">Giáo viên hướng dẫn</label>
+      <select class="form-control form-select-lg mb-3" [compareWith]="compareFn" id="teacher" formControlName="teacher">
+        <option selected>Open this select menu</option>
+        <option *ngFor="let teacher of children" [ngValue]="teacher">{{teacher.name}}</option>
+      </select>
+      <p class="error" *ngIf="parentForm.controls['teacher'].hasError('required') && (parentForm.controls['teacher'].touched||parentForm.controls['teacher'].dirty)">Bắt buộc</p>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!parentForm.valid" >Submit</button>
+    <button type="submit" class="btn btn-danger" (click)="getExit()">Exit</button>
+  </form>
+</div>

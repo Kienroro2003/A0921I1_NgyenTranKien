@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --bg-sidebar: #f1f1f1;
+}
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.bg-sidebar {
+  background-color: var(--bg-sidebar);
+}
+
+.sub-title h2 {
+  color: #43464b;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 700;
+}
+
+.sub-title h2:last-child {
+  opacity: 0.7;
+}
+
+.ticket-icon span {
+  line-height: 16px;
+  display: inline;
+}
+
+.ticket-icon {
+  margin: 15px 0;
+  line-height: 16px !important;
+}
+
+.icon-c13 {
+  width: 28px;
+  height: 22px;
+  display: inline-block;
+  line-height: 16px;
+  background: url(../images/ic-c13.png) no-repeat;
+  background-size: cover;
+}
+
+.detail_icon {
+  color: #ff0033;
+  display: inline;
+  font-size: 11px;
+  line-height: 11px;
+  padding: 0px 0px 0px 5px;
+  align-items: center;
+}
+
+.ticket-info p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 19.5px;
+  border-bottom: 1px dotted black;
+}
+
+.ticket-price-total span {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.ticket-button{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket-button button{
+  bac
+}

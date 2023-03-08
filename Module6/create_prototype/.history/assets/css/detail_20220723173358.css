@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --bg-ticket: #f1f1f1;
+  --color-secondary: #43464b;
+  --color-primary: #e50815;
+}
+body {
+  font-family: "Roboto", sans-serif !important;
+  background-color: var(--color-secondary);
+}
+
+.container {
+  margin: 30px 0;
+}
+
+ol.breadcrumb {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+  padding: 8px 15px;
+  margin: 0 0 30px;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+.detail-feature .row .col-4 {
+  padding: 0 15px 0 ;
+}
+
+.detail-feature .row .col-8{
+    padding: 0 15px 0 ;
+}
+
+.detail-feature .row .col-4 img {
+  width: 100%;
+}
+
+.details .detail-title{
+    margin: 0px;
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.details .detail-info{
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.details .detail-info label{
+    display: inline-block;
+    color: #A1A3A7;
+}
+
+.details .detail-info .detail-info-right{
+    display: inline-block;
+}
+
+.details .detail-info .detail-info-right:hover{
+    color: #C4582E;
+}

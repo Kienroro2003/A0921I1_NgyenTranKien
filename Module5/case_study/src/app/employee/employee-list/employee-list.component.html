@@ -7,32 +7,32 @@
       <thead>
       <tr style="background-color: #FF2C2B;">
         <th>STT</th>
-        <th>Id Customer</th>
         <th>Name</th>
         <th>Birthday</th>
         <th>Id Card</th>
         <th>Phone number</th>
         <th>Email</th>
+        <th>Address</th>
+        <th>Salary</th>
         <th>Level</th>
         <th>Position</th>
         <th>Department</th>
-        <th>Salary</th>
         <th>Actions</th>
       </tr>
       </thead>
       <tbody>
       <tr *ngFor="let employee of employees | paginate: { itemsPerPage: 2, currentPage: p };index as i">
         <td>{{i + 1}}</td>
-        <td>{{employee.idEmployee}}</td>
-        <td>{{employee.nameEmployee}}</td>
-        <td>{{employee.dateOfBirth|date:"dd/MM/yyyy"}}</td>
-        <td>{{employee.idCard}}</td>
-        <td>{{employee.phoneNumber}}</td>
-        <td>{{employee.email}}</td>
-        <td>{{employee.level.name}}</td>
-        <td>{{employee.position.name}}</td>
-        <td>{{employee.department.name}}</td>
-        <td>{{employee.salary|currency:'VND'}}</td>
+        <td>{{employee.employeeName}}</td>
+        <td>{{employee.employeeBirthday|date:"dd/MM/yyyy"}}</td>
+        <td>{{employee.employeeIdCard}}</td>
+        <td>{{employee.employeePhone}}</td>
+        <td>{{employee.employeeEmail}}</td>
+        <td>{{employee.employeeAddress}}</td>
+        <td>{{employee.employeeSalary|currency:'VND'}}</td>
+        <td>{{employee.educationDegree.educationDegreeName}}</td>
+        <td>{{employee.position.positionName}}</td>
+        <td>{{employee.division.divisionName}}</td>
         <td>
           <button type="button" class="btn btn-primary" [routerLink]="['/employee/edit',employee.id]">Update</button>
           <button type="button" class="btn btn-info" [routerLink]="['/employee/info',employee.id]">Info</button>
@@ -50,7 +50,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Are you sure delete: {{employee.nameEmployee}}
+                  Are you sure delete: {{employee.employeeName}}
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
